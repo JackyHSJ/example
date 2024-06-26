@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "3112133039",
+    "project_id": "zygfrechat",
+    "storage_bucket": "zygfrechat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3112133039:android:f4c0766d7b1f4b74afcf5a",
+        "android_client_info": {
+          "package_name": "com.zyg.frechat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJbu4iqUk4P4ANnOE7r9x0LNy4e29Akpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,176 @@
+import 'package:flutter/material.dart';
+
+class PersonalBookkeeping extends StatefulWidget {
+  const PersonalBookkeeping({super.key});
+
+  @override
+  State<PersonalBookkeeping> createState() => _PersonalBookkeepingState();
+}
+
+class _PersonalBookkeepingState extends State<PersonalBookkeeping> {
+  List<bool> btList = [false, true, false];
+  bool isButtonPressed = false;
+  double secondLayerOffset = 0.0; //偏移量
+  final GlobalKey _thirdLayerKey = GlobalKey();
+  double l = 3, t = 0, r = 3, b = 0;
+  double offsetPerButton = 100;
+
+  double _getThirdLayerWidth() {
+    final RenderBox? thirdLayerRenderBox = _thirdLayerKey.currentContext?.findRenderObject() as RenderBox?;
+    return thirdLayerRenderBox?.size.width ?? 0.0;
+  }
+
+  void moveSecondLayerToButton(int buttonIndex) {
+    final RenderBox? thirdLayerRenderBox = _thirdLayerKey.currentContext!.findRenderObject() as RenderBox?;
+    offsetPerButton = thirdLayerRenderBox!.size.width / 3;
+    //double screenWidth = MediaQuery.of(context).size.width;
+    //double offsetPerButton = screenWidth / 3; // 调整偏移量的基准值
+    setState(() {
+      secondLayerOffset = buttonIndex * offsetPerButton;
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance!.addPostFrameCallback((_) {
+      offsetPerButton = _getThirdLayerWidth() / 3;
+      setState(() {
+        offsetPerButton;
+      });
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(Icons.arrow_back_ios),
+        ),
+        title: const Text('收支明细', style: TextStyle(fontSize: 16, color: AppColors.textFormBlack, fontWeight: FontWeight.bold)),
+        centerTitle: true, // 将标题居中
+      ),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
+            child: Center(
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  // 第三层：底色框
+                  Positioned(
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    child: Container(
+                      key: _thirdLayerKey,
+                      //width: 100.0, // 每个按钮宽度
+                      height: 48.0,
+                      decoration: BoxDecoration(
+                        color: const Color.fromRGBO(245, 245, 245, 1),
+                        /*
+                        border: Border.all(
+                          color: selectedButtonIndex == -1 ? Colors.transparent : Colors.blue,
+                          width: 2.0,
+                        ),
+                        */
+                        borderRadius: BorderRadius.circular(22.0),
+                      ),
+                    ),
+                  ),
+                  // 第二层：按钮边框
+                  AnimatedPositioned(
+                    duration: const Duration(milliseconds: 200),
+                    left: secondLayerOffset,
+                    child: Container(
+                      padding: EdgeInsets.fromLTRB(0, 0, offsetPerButton - l - r, 42),
+                      //width: offsetPerButton, //MediaQuery.of(context).size.width / 3,
+                      //height: 42,
+                      margin: EdgeInsets.symmetric(horizontal: l),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.3),
+                            spreadRadius: 0.5,
+                            blurRadius: 10,
+                            offset: const Offset(0, 5),
+                          ),
+                        ],
+                      ),
+                      child: const SizedBox(),
+                    ),
+                  ),
+                  // 第一层：文字按钮
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Expanded(
+                        child: TextButton(
+                          onPressed: () {
+                            setState(() {
+                              moveSecondLayerToButton(0);
+                            });
+                          },
+                          style: TextButton.styleFrom(
+                            elevation: 0,
+                            backgroundColor: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                            ),
+                          ),
+                          child: const Text('金币'),
+                        ),
+                      ),
+                      Expanded(
+                        child: TextButton(
+                          onPressed: () {
+                            setState(() {
+                              moveSecondLayerToButton(1);
+                            });
+                          },
+                          style: TextButton.styleFrom(
+                            elevation: 0,
+                            backgroundColor: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                            ),
+                          ),
+                          child: const Text('收益'),
+                        ),
+                      ),
+                      Expanded(
+                        child: TextButton(
+                          onPressed: () {
+                            setState(() {
+                              moveSecondLayerToButton(2);
+                            });
+                          },
+                          style: TextButton.styleFrom(
+                            elevation: 0,
+                            backgroundColor: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                            ),
+                          ),
+                          child: const Text('提现纪录'),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

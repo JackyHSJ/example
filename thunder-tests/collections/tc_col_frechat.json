@@ -1,0 +1,23 @@
+{
+    "_id": "f0c6cdab-6ca3-49c6-99da-260579b850b5",
+    "colName": "frechat",
+    "created": "2023-06-30T06:21:36.890Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b5677876-9191-4d49-9e00-abcb1a845deb",
+            "colId": "f0c6cdab-6ca3-49c6-99da-260579b850b5",
+            "containerId": "",
+            "name": "freChat/keepAlive/check",
+            "url": "{{endPoint}}/freChat/keepAlive/check",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-30T06:21:36.892Z",
+            "modified": "2023-06-30T06:23:21.036Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

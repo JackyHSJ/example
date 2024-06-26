@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>$(INFOPLIST_KEY_CFBundleDisplayName)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(CONFIG_BUNDLE_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>$(CONFIG_DEEPLINK_KEY)</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>alipay</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>alipay2021004121650267</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>frechat</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>frechat</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>weixin</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wxd59a98b26eb7b0f1</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>$(CONFIG_DEEPLINK_KEY)</string>
+		<string>$(CONFIG_BUNDLE_NAME)</string>
+		<string>alipay</string>
+		<string>weixin</string>
+		<string>weixinULAPI</string>
+		<string>weixinURLParamsAPI</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>  - 相机权限
+    - $(INFOPLIST_KEY_CFBundleDisplayName)需要取用您的相机以提供更好的使用体验，并实现以下功能：
+    - 拍摄照片：允许您拍摄照片，以在应用程序中记录和分享您的精彩时刻。
+    - 视频通话：支持视频通话功能，使您能够与好友进行面对面的视讯通话。
+    - 美颜设置: 允许您使用相机，进行美颜设置</string>
+	<key>NSContactsUsageDescription</key>
+	<string>我们的应用使用您的联系人数据来帮助您快速邀请朋友加入我们的服务，并且只在您同意的情况下进行。</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>  - 麦克风权限
+    - $(INFOPLIST_KEY_CFBundleDisplayName)需要取用您的麦克风以提供更好的使用体验，并实现以下功能：
+    - 语音讯息：您可以发送语音消息给好友，这可以更生动地表达您的情感和信息。
+    - 语音通话：支持语音通话功能，使您能够与好友进行更生动的语音、视频、速配通话。</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>  - 照片权限
+    - $(INFOPLIST_KEY_CFBundleDisplayName)需要取用您的相簿以提供更好的使用体验并实现以下功能：
+    - 头像设置：您可以选择更换应用程序内的头像或封面图片，这需要访问您的相簿。
+    - 照片上传：您可以将照片上传到我们的应用程序，以分享和保存您的回忆和内容。</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>要允许「缘遇」追踪您在其他公司App和网站的记录吗？
+您的数据将用于改善产品，提升使用体验。包括以下信息：
+●浏览历史：我们会记录您在应用程序中访问的页面和功能，以了解您的偏好和使用模式。
+●点击和互动：我们会记录您与应用程序中的按钮、连接和内容的互动方式，以改进用户界面和功能。</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>com.openinstall.APP_KEY</key>
+	<string>$(CONFIG_DEEPLINK_KEY)</string>
+</dict>
+</plist>

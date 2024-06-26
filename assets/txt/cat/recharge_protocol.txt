@@ -1,0 +1,679 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>喵疗充值协议</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+        padding: 0 1rem;
+        overflow-wrap: break-word;
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+</style></head><body><article id="2e0b3fc4-8dd4-4cbb-acdb-e976339d81ed" class="page sans"><header><h1 class="page-title">喵疗充值协议</h1><p class="page-description"></p></header><div class="page-body"><p id="273e24a6-95d8-4618-be55-f49ca58fb114" class="">喵疗（下称“本平台”）用户充值协议（下称“本协议”）是南宁缘茵文化传媒有限公司（下称“我们”）和用户（下称“您”）就您按照本协议规定及我们不时发布的操作规则使用基于互联网的充值服务（下称“充值服务”)所签订的协议。为获得充值服务，请服务使用人(下称“您”)认真阅读并充分知悉、理解本平台的各项规则及要求，以及国家关于该类互联网信息服务的法律法规等。如果您对本协议的任何条款表示异议，您可以选择不使用充值服务；您为使用本平台服务而进行充值，即视为您将同意遵守本协议下全部条款，以及我们后续对本协议随时所作的任何修改，本协议及相应修改即成为对双方均具有约束力的法律文件。本协议已对与您的权益具有或可能具有重大关系的条款，及对本平台具有或可能具有免责或限制责任的条款用粗体字予以标注，请您注意。</p><p id="d593345f-7ffa-4f3b-a116-54a12d95db10" class="">本平台不鼓励未成年人使用相关服务，未成年人请委托监护人操作或在监护人明示同意下操作，否则不得使用本平台充值服务。</p><h1 id="383e8478-e51c-45a3-a3bb-6398ab7b79b1" class="">第一章 总则</h1><p id="95c02f6b-f3bc-4584-b373-fade16742aad" class="">第1条 本平台所有权、经营权、管理权均属南宁缘茵文化传媒有限公司。</p><h1 id="57f31722-517e-4689-be48-10bb58e4dbe3" class="">第二章 金币购买规则</h1><p id="d9c823f7-65c2-4bfe-a8ba-08de7c64a7eb" class="">第2条 金币是我们向您提供的用于在本平台上进行相关消费的币种，您可通过充值购买相应数量的金币。您可以使用金币购买特效礼物等本平台上各项产品或服务，并可将购买的特效礼物赠与其他注册用户。</p><p id="7a6227ea-c78e-4340-ab34-67ba2252ea9d" class="">第3条 您购买金币需要向我们支付人民币。您确认了解并接受在购买金币时充值页面所显示的金币价格。</p><p id="8a3b2369-4a37-4916-bc96-60391146d5df" class="">第4条 当我们通过App Store确认收到您为购买金币所支付的款项后，则视为您已完成购买相应数量的金币或特效礼物交易。您的用户帐户中显示的金币或特效礼物余额并不构成现实世界的货币现金的余额，您无法将金币或特效礼物兑换为真实货币（包括但不限于人民币等）。</p><p id="00927e5a-9839-46a6-ab59-ad4ae641154e" class="">第5条 本平台保留对使用人民币购买金币的规则进行单方面变更、调整、中止或终止的权利。您同意无条件接受对上述购买规则的变更、调整、中止或终止，本平台开展前述行动时，将在本平台以公布的方式通知，并自公布之日起自动生效，而无需另行单独通知您，也不就该等行动给您造成的任何损失承担任何责任。</p><p id="52380688-f99e-4923-8304-4deed2a72c09" class="">第6条 在使用充值服务时，您务必仔细确认自己的账号并仔细选择相关操作选项。若因为您自身输入账号错误、操作不当或不了解充值计费方式等因素造成充错账号、错选充值种类等情形而使自身权益受损的，本平台将不会作出任何补偿或赔偿。</p><p id="c4f6fe3d-6389-4e41-b8ae-7be5c1f73520" class="">第7条 若您以非法、欺诈或利用本平台漏洞的方式，或使用非本平台所指定的充值方式进行充值，本平台不保证该充值顺利或者正确完成。若因此造成您权益受损，本平台不会作出任何补偿或赔偿，本平台同时保留随时终止您本平台账号资格及使用各项充值服务的权利。</p><p id="edee34fe-1af6-42d3-9366-9f23c318df5f" class="">第8条 您不得通过本平台充值进行任何违法犯罪活动，否则本平台有权终止服务，情节严重的，依法移交司法机关。</p><p id="a2d25500-aa30-4588-a2e5-580abbc4f70b" class="">第9条 充值成功后，您账号内充值所增加的金币可由您在本平台上自由使用，但本平台不会提供任何退还或逆向兑换服务。</p><p id="0e61c42b-a31f-421b-b3d2-f14f8a590e3e" class="">第10条 如果本平台发现因系统故障或其他任何原因导致的充值处理错误，无论有利于本平台还是有利于您，本平台都有权在以合理方式通知您后纠正该错误。如果该错误导致您实际收到的金币数量少于您应获得的金币，则本平台在确认该处理错误后会尽快将差额补足至您的本平台账户中。如果该错误导致您实际收到的金币数量多于您应获得的金币，则无论错误的性质和原因如何，本平台有权在通知您后从您的本平台账户中直接扣除差额。</p><h1 id="f7d10726-1313-4ba0-8bba-d7eb1d2e8596" class="">第三章 权利声明</h1><p id="fe41d4ea-0b77-4744-a883-ddf4eafd5172" class="">第11条 您可随时在本平台上查看您的金币余额情况。如您对交易记录有异议，应立即向本平台提出，本平台核对后确有错误的，将予以更正；否则您同意将本平台上的交易记录作为金币交易的唯一有效依据。</p><p id="4055bb9a-40ab-4159-8b15-aa613474e102" class="">第12条 本平台有权基于交易安全等方面的考虑不时设定涉及交易的相关事项，包括但不限于交易限额、交易次数等。您了解，本平台的前述设定可能对您的交易造成一定不便，您对此没有异议。</p><p id="a06c21aa-849c-4396-a57a-8837fd6f4494" class="">第13条 在任何情况下，对于您购买金币时涉及由第三方提供相关服务的责任由该第三方承担，本平台不承担该等责任。</p><p id="c9816a82-6a5a-4d11-9b24-e30f12a20ecd" class="">第14条 进行充值时，您应确保您是绑定第三方支付机构账户的持有人，包括但不限于银行卡账户等，可合法、有效使用该账户且未侵犯任何第三方合法权益，否则因此造成账户实际所有人损失的，您应单独负责解决由此产生的纠纷并承担全部法律责任。如因此给本平台造成损失的，您应全额赔偿本平台所有损失。</p><p id="d8ccf753-d1ec-424d-8318-21a70e16548f" class="">第15条 因您自身的原因导致本平台无法提供金币购买服务或提供金币购买服务时发生任何错误而产生的任何损失或责任，由您自行负责，本平台不承担责任，包括但不限于：</p><ol type="1" id="143e9c8f-be32-46d4-af65-d0c29fa9b223" class="numbered-list" start="1"><li>您未按照《喵疗用户注册和服务协议》或本协议或本平台不时公布的任何规则进行操作；</li></ol><ol type="1" id="b9e89027-21a7-4776-9b60-aa5af11fb44b" class="numbered-list" start="2"><li>因您的设备原因导致本平台应用程序失效、丢失、被封停；</li></ol><ol type="1" id="c4cbfa25-d5f3-4b53-9c68-4b446e50bc03" class="numbered-list" start="3"><li>因您绑定的第三方支付机构账户的原因导致的损失或责任，包括您使用未经认证的第三方支付账户或使用非您本人的第三方支付账户，您的第三方支付账户被冻结、查封等；</li></ol><ol type="1" id="c5b14a4d-26ec-48ac-b68e-f1f9124e7f59" class="numbered-list" start="4"><li>您将密码告知他人导致的财产损失；</li></ol><ol type="1" id="6dc39a2e-2e43-43e9-967f-d3ba8536481b" class="numbered-list" start="5"><li>因您个人的故意或重大过失或其他任何第三方所造成的您财产损失。</li></ol><p id="011b1830-ec2a-47e8-964e-6ef7ecff2f6b" class="">第16条 本平台系统因下列状况无法正常运作，使您无法使用各项服务或任何虚拟财产丢失时，本平台不承担损害赔偿责任，该状况包括但不限于：</p><ol type="1" id="319a4abe-6506-4ce3-802e-4f4425530be3" class="numbered-list" start="1"><li>在本平台公告之系统停机维护、升级、调整期间；</li></ol><ol type="1" id="d83de787-fa18-4182-babc-e496567dbf9d" class="numbered-list" start="2"><li>电信通讯或设备出现故障不能进行数据传输的；</li></ol><ol type="1" id="41bf89ef-00ef-4f5f-a0c6-2b7160326d5e" class="numbered-list" start="3"><li>因台风、地震、海啸、洪水、停电、战争、恐怖袭击、政府管制等不可抗力之因素，造成本平台系统障碍不能执行业务的；</li></ol><ol type="1" id="d2370a78-09d4-479f-97d2-6ba792430874" class="numbered-list" start="4"><li>由于黑客攻击、电信部门技术调整或故障、网站升级、相关第三方的问题等原因而造成的服务中断或者延迟。</li></ol><h1 id="f1cc54c4-c56e-4ba0-ace9-902127b0a546" class="">第四章 处罚规则</h1><p id="8fa2b64c-8167-4f5a-b556-51d04033d285" class="">第17条 如发生下列任何一种情形，本平台有权随时中断或终止向您提供本协议项下的网络服务而无需通知您：</p><ol type="1" id="92a8daa6-2167-4fbf-bfbc-bf7ec73d2d59" class="numbered-list" start="1"><li>您提供的个人资料不真实；</li></ol><ol type="1" id="2d82b077-cd6e-426b-9fa2-ae7a8fdf6660" class="numbered-list" start="2"><li>您违反本协议中规定的购买规则。除前款所述情形外，本平台同时保留在不事先通知您的情况下随时中断或终止部分或全部网络充值服务的权利，对于充值服务的中断或终止而造成的任何损失，本平台无需对您或任何第三方承担任何责任。</li></ol><p id="0bc241e3-5c72-4420-b467-e0df1984ef30" class="">第18条 如果您违规使用非本人手机应用商店代冲值，或者通过其它非本平台认可的渠道非法购买金币，则本平台有权冻结该账户，并进行相应惩罚，严重者可以进行封号处理。</p><p id="911d10ef-9258-444a-b7df-131aab74ded7" class="">第19条 您在使用本平台时，如出现违反国家法律法规、《喵疗用户注册和服务协议》约定、本协议约定、本平台公布的其他协议、规则、规范、声明、公告等或对用户的管理规定的情形，本平台有权暂时或永久封禁您的账号，且有权扣除本平台赠送/奖励的金币(如有)。账号封禁后至解禁（如有）前，您账户上的金币余额（如有）将被暂时冻结或全部扣除，不可继续用于购买本平台上的虚拟产品或服务，同时不予返还您购买金币时的现金价值。</p><h1 id="6d621e0d-7b47-4ccb-9480-6f5bc8784857" class="">第五章 附则</h1><p id="ba15edbb-52d2-4df8-87e2-e1e0b747e41c" class="">第20条 本平台保留修改或增补本协议内容的权利。本协议的修改文本将公告于本平台或以其他本平台认为可行的方式公告。修改文本一旦公布则立即生效，且对生效前的您同样适用。若您在本协议内容发生修订后，继续使用本服务的，则视为您同意最新修订的协议内容；否则您须立即停止使用充值服务或本平台。</p><p id="86f0fc56-1581-432b-b5f2-47bd7ce23f3d" class="">第21条 凡因本协议所引起的或与之相关的任何争议､纠纷､分歧或索赔，包括协议的存在､效力､解释､履行､违反或终止，或因本协议引起的或与之相关的任何非协议性争议，本平台将与您协商解决。协商不成的，任何一方均有权向我们住所地有管辖权的人民法院提起诉讼并适用中华人民共和国法律。</p><p id="41c7d0b4-4cfb-4fdd-b708-6ba18ba0dde5" class="">第22条 本协议部分内容被有管辖权的法院认定为违法或无效的，不因此影响其他内容的效力。本协议与《喵疗用户注册和服务协议》《喵疗隐私政策》及本平台不时公布的其他协议、规则、声明、公告等构成本平台完整协议、规则，具有同等法律效力，本协议未涉及事宜则以《喵疗用户注册和服务协议》《喵疗隐私政策》及本平台不时公布的其他协议、规则、声明、公告为准。当本协议与国家法律法规冲突时，以国家法律法规为准。</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

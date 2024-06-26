@@ -1,0 +1,170 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+//apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.huawei.agconnect'
+
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+android {
+    namespace "com.zyg.frechat"
+    compileSdkVersion 34
+    ndkVersion flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+//    defaultConfig {
+//        multiDexEnabled true//Benson 20230710
+//        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+//        applicationId "com.zyg.frechat"
+//        // You can update the following values to match your application needs.
+//        // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
+//        minSdkVersion 21
+//        targetSdkVersion flutter.targetSdkVersion
+//        versionCode flutterVersionCode.toInteger()
+//        versionName flutterVersionName
+//
+//        ndk {
+//            //选择要添加的对应 cpu 类型的 .so 库。
+//            abiFilters 'arm64-v8a'
+//            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+//        }
+//        manifestPlaceholders = [
+//                JPUSH_PKGNAME : "com.zyg.frechat",
+//                JPUSH_APPKEY : "22abe8a9db7e16b7be863a37", // NOTE: JPush 上注册的包名对应的 Appkey.
+//                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+//
+//                OPENINSTALL_APPKEY : "ayyuo0",
+//        ]
+//    }
+
+    flavorDimensions "app"
+
+    productFlavors {
+        frechat {
+            dimension "app"
+//            apply plugin: 'com.huawei.agconnect'
+            applicationId "com.zyg.frechat"
+//            versionName "1.0-demo"
+            ndk {
+                //选择要添加的对应 cpu 类型的 .so 库。
+                abiFilters 'arm64-v8a'
+                // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+            }
+            minSdkVersion 21
+            targetSdkVersion 32
+            versionCode flutterVersionCode.toInteger()
+            versionName flutterVersionName
+            manifestPlaceholders = [
+                JPUSH_PKGNAME : "com.zyg.frechat",
+                JPUSH_APPKEY : "22abe8a9db7e16b7be863a37", // NOTE: JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+                OPENINSTALL_APPKEY : "ayyuo0"]
+            resValue "string", "app_icon", "@mipmap/frechat_app_logo"
+            resValue "string", "app_name", "缘遇"
+            resValue "string", "app_package", "com.zyg.frechat"
+            resValue "string", "openInStall_key", "ayyuo0"
+        }
+        yueyuan {
+            dimension "app"
+            applicationId "com.yuanyin.yueyuan"
+//            versionName "1.0-full"
+            ndk {
+                //选择要添加的对应 cpu 类型的 .so 库。
+                abiFilters 'arm64-v8a'
+                // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+            }
+            minSdkVersion 21
+            targetSdkVersion flutter.targetSdkVersion
+            versionCode flutterVersionCode.toInteger()
+            versionName flutterVersionName
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME : "com.yuanyin.yueyuan",
+                    JPUSH_APPKEY : "cc6b45d374ad033470151fc1", // NOTE: JPush 上注册的包名对应的 Appkey.
+                    JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+                    OPENINSTALL_APPKEY : "zua4a6"]
+            resValue "string", "app_icon", "@mipmap/yueyuan_app_logo"
+            resValue "string", "app_name", "月缘"
+            resValue "string", "app_package", "com.yuanyin.yueyuan"
+            resValue "string", "openInStall_key", "zua4a6"
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    implementation files('libs/quick_login_android_5.9.4.jar')
+//    implementation 'cn.jiguang.sdk:jverification:2.6.7'  // 此处以jverification 2.6.7 版本为例。
+//    implementation 'cn.jiguang.sdk:jcore:2.5.5'  // 此处以JCore 2.5.5 版本为例。
+    implementation platform('com.google.firebase:firebase-bom:29.3.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging:21.1.0'
+    implementation files('libs/MiPush_SDK_Client_6_0_1-C_3rd.aar') // 版本为 5.7.8 的小米推送 SDK
+    implementation 'com.huawei.hms:push:6.12.0.300'
+    implementation files('libs/vivo_pushSDK_v4.0.0.0_500.aar')
+//    implementation files('libs/com.heytap.msp_3.4.0.aar')
+
+
+    implementation 'com.heytap.msp:push:3.0.0'
+
+    api 'com.tencent.mm.opensdk:wechat-sdk-android:+'
+}

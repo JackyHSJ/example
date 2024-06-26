@@ -1,0 +1,426 @@
+name: frechat
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+
+version: 1.6.8+0
+
+environment:
+  sdk: '>=3.0.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # http: ^0.13.6
+  # API網路請求用套件
+  dio: ^5.2.0
+
+  # For better message log.
+  logger: ^1.4.0
+
+  flutter_localizations:
+    sdk: flutter
+
+  # launch http urls.
+  url_launcher: ^6.1.14
+
+  drag_and_drop_lists: ^0.3.3
+
+  # 實用 material design Icon 庫
+  # 可上 https://pictogrammers.com/library/mdi/ 去找你要的 icon, 幾乎都可以用
+  material_design_icons_flutter: ^7.0.7296
+
+  # https://pub.dev/packages/after_layout
+  # 提供 initState 在推遲一點點時間的初始化時間點選擇
+  # 有一些不方便在 initState 做的事情可以用這個處理
+  after_layout: ^1.2.0
+
+  # https://pub.dev/packages/shared_preferences
+  # 儲存 client 端變簡易數使用
+  shared_preferences: ^2.1.2
+
+  # https://riverpod.dev/docs/getting_started
+  # 狀態管理用
+  flutter_riverpod: ^2.3.6
+  freezed: ^2.4.2
+
+  # https://pub.dev/packages/go_router
+  # Flutter 路由管理
+  #  go_router: ^8.0.5
+
+  # 拿來取版本號碼用
+  package_info_plus: ^4.1.0
+
+  # For renaming package
+  rename: ^2.1.1
+
+  # 頁面進出動畫
+  page_transition: ^2.0.9
+
+  # For model toJson/fromJson quick generation.
+  json_annotation: ^4.8.1
+
+  # 顯示ＳＶＧ
+  flutter_svg: ^2.0.7
+
+  #推播
+  overlay_support: ^2.1.0
+
+  #輪播圖用 Swiper
+  flutter_swiper_null_safety: ^1.0.2
+
+  #DateTime Format
+  intl: ^0.19.0
+
+  #Sound Record
+  flutter_sound: ^9.2.13
+  audio_session: ^0.1.16
+  just_audio: ^0.9.34
+  audioplayers: ^5.2.1
+
+
+  #webview H5
+  flutter_inappwebview: ^6.0.0-beta.25
+
+  # load url image
+  cached_network_image: ^3.2.3
+
+  # compress image, 壓縮圖片大小
+  flutter_image_compress: ^2.0.4
+
+  # photo view for viewing images.
+  photo_view: ^0.14.0
+
+  # page indicator.
+  smooth_page_indicator: ^1.1.0
+
+  # 热力引擎
+  trackingio_flutter_plugin:
+    git:
+      url: http://192.168.41.150/AppTeam/fre-chat/zyg_trackingio_plugin.git
+      ref: main
+
+  # zyg websocket plugin
+  zyg_websocket_plugin:
+    git:
+      url: http://2307002:1109@192.168.41.150/AppTeam/fre-chat/zyg_websocket_plugin.git
+      ref: main
+
+  #  zyg sqflite plugin
+  zyg_sqflite_plugin:
+    git:
+      url: http://2307002:1109@192.168.41.150/AppTeam/fre-chat/zyg_sqflite_plugin.git
+      ref: main
+
+  zego_express_engine: 3.13.3
+
+#  zego_faceunity_plugin:
+#    git:
+#      url: http://2307002:1109@192.168.41.150/AppTeam/fre-chat/zyg_zego_faceunity_plugin.git
+#      ref: test
+
+  # zego push notification & jpush
+  zego_zpns: 2.6.0+2
+#  zego_callkit: ^1.0.0+2
+#  flutter_callkeep: ^0.3.3
+
+#  jpush_flutter: 2.4.9
+
+  #頂部聊天訊息通知
+  #top_snackbar_flutter: ^3.1.0
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.5
+
+  # For AES encryption.
+  encrypt: 5.0.1
+
+  #Zego極構 call
+  zego_zim: 2.15.0
+
+  # Zego 美顏
+  zego_effects_plugin: 1.0.13
+
+  # 振動
+  vibration: ^1.8.3
+
+  # apple iap
+  in_app_purchase: ^3.1.11
+
+  # 神策 用戶分析用
+#  sensors_analytics_flutter_plugin: 2.4.0
+
+  # 支付寶
+  # Android
+  alipay_kit: ^6.0.0
+  # iOS
+  alipay_kit_ios: ^6.0.0
+
+  # 微信支付
+  wechat_kit: ^6.0.1
+  wechat_kit_extension: ^1.0.1
+#  link_kit: ^1.0.1
+
+  # drag and drop gridview
+  flutter_draggable_gridview: ^0.0.8
+
+  #畫面間距
+  flutter_screenutil: ^5.8.4
+
+  #取得設備資訊
+  device_info_plus: ^9.0.2
+
+  #感应器
+  sensors_plus: ^4.0.1
+
+  #權限
+  permission_handler: ^11.0.0
+
+  shimmer: ^3.0.0
+
+  #開源動畫
+  lottie: ^2.4.0
+
+  #iOS get IDFA
+  app_tracking_transparency: ^2.0.4
+  #Android get oaid_kit:
+#  device_identity: ^1.0.0
+
+  #新增畫面Live cycle方法 ex.viewDidLoad...
+  focus_detector: ^2.0.1
+
+  # 動態牆 tagName 用
+  rich_text_controller: ^1.4.2
+
+  #檔案路徑
+  path_provider: ^2.0.15
+
+  # 本地推播, 來電用
+  flutter_local_notifications: ^16.3.2
+
+  # 地區
+  flutter_timezone: ^1.0.8
+
+  # 壓縮影片
+  video_compress: ^3.1.2
+
+  visibility_detector: ^0.2.1
+
+  #拿來判斷當前是什麼網路類型
+  connectivity_plus: 5.0.0
+  #極光一鍵登入
+#  jverify: 2.4.3
+
+  #取得相簿照片
+  image_picker: ^1.0.0
+  #選擇器
+  flutter_pickers: ^2.1.9
+  #Toast
+  fluttertoast: ^8.2.2
+  #平滑用元件，call 頁面使用
+  marqueer: ^1.4.0
+
+  #圖片剪裁
+  image_cropper: ^4.0.0
+
+  #表情包鍵盤
+  emoji_picker_flutter: ^1.6.1
+
+  #影片播放
+  video_player: ^2.7.2
+
+  #下拉刷新
+  custom_refresh_indicator: ^2.2.1
+
+  #刷新動畫
+  loading_animation_widget: ^1.2.0+4
+
+  #Qrcode
+  qr_flutter: ^4.1.0
+
+  #存圖片到相簿
+  image_gallery_saver: ^2.0.3
+
+  # 便利套用 App Launcher Icon 用
+  flutter_launcher_icons: "^0.13.1"
+
+  svgaplayer_flutter: ^2.2.0
+
+  # openinstall 三方套件
+  openinstall_flutter_plugin: 2.4.4
+
+  # 分享連結用
+  share_plus: ^7.1.0
+#  social_share_plus: ^0.0.4
+
+  pasteboard: ^0.2.0
+
+  wakelock_plus: ^1.1.2
+
+  # 网易易盾一键登入
+  quickpass_yidun_flutter: ^1.4.1
+
+  #百度定位
+  #  flutter_bmflocation: ^3.5.0
+
+  # Ai聊天 // http://192.168.41.150/AppTeam/fre-chat/zyg_open_ai_plugin.git
+  zyg_open_ai_plugin:
+    git:
+      url: http://2307002:1109@192.168.41.150/AppTeam/fre-chat/zyg_open_ai_plugin.git
+      ref: main
+
+  # 影片縮圖
+  video_thumbnail: ^0.5.3
+
+  # 跳轉至設定
+  app_settings: 5.1.1
+
+dependency_overrides:
+  collection: ^1.17.2
+  http: ^1.1.0
+  uuid: ^4.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # For model toJson/fromJson quick generation.
+  json_serializable: ^6.7.0
+  build_runner: ^2.4.6
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.1
+
+  # 這些是 run_configs 底下的編譯用 scripts 會用到的東西，主要拿來取得 pubspec 內的版號。
+  pubspec_parse: ^1.2.3
+  path: ^1.8.3
+  pub_semver: ^2.1.4
+  git: ^2.2.1
+
+flutter_launcher_icons:
+#  image_path_android: "assets/images/app_icon.png"
+  image_path_ios: "assets/images/app_icon.png"
+#  android: true # can specify file name here e.g. "ic_launcher"
+  ios: true # can specify file name here e.g. "My-Launcher-Icon"
+#  min_sdk_android: 21 # android min sdk min:16, default 21
+  remove_alpha_ios: true
+  background_color_ios: "#ffffff"
+  web:
+    generate: true
+    image_path: "assets/images/app_icon.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/images/app_icon.png"
+    icon_size: 46 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/images/app_icon.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+  #  - assets/images/
+    - assets/strike_up_list/
+    - assets/home/tab/
+    - assets/profile/
+#    - assets/profile/demo/
+    - assets/video_dating/
+    - assets/user_info_view/
+    - assets/task_center_view/
+    - assets/icons/
+    - assets/icons/chat_message/
+    - assets/beautyIcons/
+    - assets/images/
+    - assets/cat/
+    - assets/dog/
+    - assets/yueyuan/
+    - assets/yueyuan/icon/
+    - assets/yueyuan/tab/
+    - assets/yueyuan/personal_profile/
+    - assets/yueyuan/tv/
+    - assets/yueyuan/user_info_view/
+    - assets/yueyuan/personal_edit/
+    - assets/yueyuan/welcome/
+    - assets/yueyuan/friend/
+    - assets/yueyuan/visitor/
+    - assets/yueyuan/certification/
+    - assets/yueyuan/custom_service/
+    - assets/yueyuan/register/
+    - assets/yueyuan/block/
+    - assets/yueyuan/teenmode/
+    - assets/yueyuan/benefit/
+    - assets/yueyuan/bookkeeping/
+    - assets/yueyuan/chatroom/
+    - assets/yueyuan/chat_message/
+    - assets/aac/
+    - assets/activity/
+    - assets/txt/
+    - assets/txt/frechat/
+    - assets/txt/yueyuan/
+    - assets/txt/cat/
+    - assets/txt/dog/
+    - assets/strike_up_tv/
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+    - assets/json/
+    - assets/avatar/
+#    - assets/poker/
+#    - assets/mock/
+#    - assets/posts/
+    - assets/free_calling/
+    - assets/common/
+    - assets/register/
+    - assets/tv/
+    - assets/agent/
+#    - assets/meet_card/
+    - lib/system/constant/merchant.txt
+    - assets/strike_up_list/frechat/
+
+alipay_kit:
+  scheme: alipay2021004121650267
+
+alipay_kit_ios:
+  scheme: alipay2021004121650267
+
+# 添加微信配置
+wechat_kit:
+  app_id: wxd59a98b26eb7b0f1
+  universal_link: https://frechat.app.link/universal_link/frechat/wechat/

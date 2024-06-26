@@ -1,0 +1,12 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"
+#include "Generated.xcconfig"
+
+CONFIG_APP_ICON = FrechatAppIcon
+CONFIG_BUNDLE_ID = com.zyg.frechat
+CONFIG_APP_NAME = 喵疗
+CONFIG_BUNDLE_NAME = frechat
+CONFIG_DEEPLINK_KEY = ayyuo0
+
+CONFIG_ASSOCIATED_DOMAINS_1 = applinks:ayyuo0.oplinking.com
+CONFIG_ASSOCIATED_DOMAINS_2 = applinks:frechat.zyg.com
+CONFIG_ASSOCIATED_DOMAINS_3 = applinks:frechat.app.link

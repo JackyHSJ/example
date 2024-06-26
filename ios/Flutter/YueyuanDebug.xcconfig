@@ -1,0 +1,12 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"
+#include "Generated.xcconfig"
+
+CONFIG_APP_ICON = YueyuanAppIcon
+CONFIG_BUNDLE_ID = com.yuanyin.yueyuan
+CONFIG_APP_NAME = 月缘
+CONFIG_BUNDLE_NAME = yueyuan
+CONFIG_DEEPLINK_KEY = zua4a6
+
+CONFIG_ASSOCIATED_DOMAINS_1 = applinks:zua4a6.oplinking.com
+CONFIG_ASSOCIATED_DOMAINS_2 = applinks:yueyuan.yuanyin.com
+CONFIG_ASSOCIATED_DOMAINS_3 = applinks:yueyuan.app.link

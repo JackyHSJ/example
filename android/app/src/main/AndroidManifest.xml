@@ -1,0 +1,195 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="@string/app_package">
+
+    <!--網路訪問權限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--WIFI狀態訪問權限-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--網路狀態訪問權限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--修改網路狀態權限-->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!--錄音權限-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--相機權限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--藍芽權限-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!--允許程式修改全局音頻設置-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!--允許程式寫數外部存儲-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允許訪問電話狀態權限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <!--懸浮窗權限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!--螢幕保持喚醒，不鎖屏-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--相機自動對焦權限-->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+
+    <!--取的定位權限-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!--離線背景狀態APP運行權限-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" android:maxSdkVersion='29'/>
+
+
+    <!--開啟第三方合作協議網頁-->
+    <queries>
+      <!-- 打電話 
+      <intent>
+        <action android:name="android.intent.action.VIEW" />
+        <data android:scheme="tel" />
+      </intent>
+      -->
+      <!-- 開啟瀏覽器 -->
+      <intent>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="https" />
+      </intent>
+    </queries>
+
+    <application
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:enableOnBackInvokedCallback="true"
+        android:icon="@string/app_icon">
+
+<!--        &lt;!&ndash; 支付宝 SDK 相关 Activity 配置 &ndash;&gt;-->
+<!--        <activity-->
+<!--            android:name="com.alipay.sdk.app.H5PayActivity"-->
+<!--            android:exported="false"-->
+<!--            android:screenOrientation="portrait" >-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name="com.alipay.sdk.auth.AuthActivity"-->
+<!--            android:exported="false"-->
+<!--            android:screenOrientation="portrait" >-->
+<!--        </activity>-->
+
+<!--        &lt;!&ndash; 如果使用了支付宝网页支付，还需要添加以下配置 &ndash;&gt;-->
+<!--        <queries>-->
+<!--            <intent>-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+<!--                <data android:scheme="alipays" />-->
+<!--            </intent>-->
+<!--            <intent>-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+<!--                <data android:scheme="https" />-->
+<!--            </intent>-->
+<!--        </queries>-->
+
+        <!-- 前台服務 -->
+        <service android:name=".MyForegroundService" />
+
+        <service android:name=".DemoHmsMessageService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:excludeFromRecents="false"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/openInStall_key"/>
+            </intent-filter>
+        </activity>
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+        <!--剪裁圖片用-->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <!-- Required -->
+        <activity
+            android:name="com.cmic.sso.sdk.activity.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified"
+            android:theme="@style/ActivityDialogStyle"/>
+        <!-- Required -->
+        <activity
+            android:name="cn.jiguang.verifysdk.CtLoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified"
+            android:theme="@style/ActivityDialogStyle"/>
+        <!-- Required -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="${JPUSH_APPKEY}" /> <!-- </>值来自开发者平台取得的AppKey -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="${JPUSH_CHANNEL}" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="GgG6ujAHi2duywNOD9sAzG1PaXda9UZP" />
+
+        <!--Vivo Push开放平台中应用的appid 和app key-->
+        <meta-data
+            android:name="com.vivo.push.api_key"
+            android:value="81741e710404f592b1b490dd396d64eb"/>
+
+        <meta-data
+            android:name="com.vivo.push.app_id"
+            android:value="105674647"/>
+
+        <meta-data
+            android:name="com.huawei.hms.clinet.appid"
+            android:value="388421841221662965"/>
+
+        <receiver android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true"
+            tools:node='merge'>
+            <intent-filter tools:node='remove'>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+</manifest>

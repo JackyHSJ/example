@@ -1,0 +1,10 @@
+
+class PersonalEditTagViewModel {
+  init() {
+
+  }
+
+  dispose() {
+
+  }
+}

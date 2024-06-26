@@ -1,0 +1,679 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>缘遇隐私政策</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+		padding: 0 1rem;
+        overflow-wrap: break-word;
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+</style></head><body><article id="37dc64a7-62c6-40aa-aae5-f1ebe2249654" class="page sans"><header><h1 class="page-title">缘遇隐私政策</h1><p class="page-description"></p></header><div class="page-body"><p id="b8472e14-7147-4749-a348-9aaa42c2644b" class="">更新日期：2024.04.19</p><p id="30cb87a1-43df-46ad-9f0f-a0886e328af8" class="">生效日期：2023.11.08</p><p id="e3feb77b-5a22-48fc-bb26-23c8ccff0b14" class="">【 南宁缘茵文化传媒有限公司】（以下简称“我们”）深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们致力于维持您对我们的信任，恪守以下原则，保护您的个人信息：权责一致原则、目的明确原则、选择同意原则、最少够用原则、确保安全原则、主体参与原则、公开透明原则等。同时，我们承诺，我们将按业界成熟的安全标准，采取相应的安全保护措施来保护您的个人信息。</p><p id="8c53ce98-7448-4a7f-8207-7262bd21e92d" class="">本政策与您使用我们的产品关系紧密，我们建议您仔细阅读并理解本政策全部内容，做出您认为适当的选择。如果您未明示同意本政策这将导致我们无法为您提供完整的产品和服务。我们努力用通俗易懂、简明扼要的文字表达，<strong>并对本政策中与您的权益存在重大关系的条款，采用下划线进行标注以提示您注意。</strong> 请您在使用我们的产品前仔细阅读本政策，确保对其内容特别是加粗内容的含义及相应法律后果已全部知晓并充分理解。您勾选或点击“同意”即视为您接受本政策；您同意本政策在您使用产品的整个过程中均有效。</p><h1 id="da71cde5-c5ec-42f1-8633-b4de981d9ae9" class="">目录</h1><p id="6985eed7-781c-4e2f-91d2-e897d8bf546e" class=""><mark class="highlight-blue"><span style="border-bottom:0.05em solid">一、我们如何收集和使用您的个人信息</span></mark></p><p id="72361a3b-b220-4723-aee4-3eca1c0db068" class=""><mark class="highlight-blue"><span style="border-bottom:0.05em solid">二、我们如何使用 Cookie 和同类技术</span></mark></p><p id="49534a82-baaf-4e49-85e3-54c12fb161a7" class=""><mark class="highlight-blue"><span style="border-bottom:0.05em solid">三、我们如何共享、转让、公开披露您的个人信息</span></mark></p><p id="8d37812b-bee5-4009-a407-063d76409786" class=""><mark class="highlight-blue"><span style="border-bottom:0.05em solid">四、我们如何保护您的个人信息</span></mark></p><p id="732af320-c6db-4ce5-9b5c-a01711577ac1" class=""><mark class="highlight-blue"><span style="border-bottom:0.05em solid">五、您的权利</span></mark></p><p id="a04abb57-c5d7-46c6-b527-c1d9b8cbc082" class=""><mark class="highlight-blue"><span style="border-bottom:0.05em solid">六、我们如何处理儿童的个人信息</span></mark></p><p id="4c7395e5-cccc-4918-b86f-a4613ef453e0" class=""><mark class="highlight-blue"><span style="border-bottom:0.05em solid">七、我们如何存储个人信息</span></mark></p><p id="2a729d1b-909f-4a9d-9187-d6ad4018cf8d" class=""><mark class="highlight-blue"><span style="border-bottom:0.05em solid">八、本隐私政策如何更新</span></mark></p><p id="7d017568-255c-4f01-a645-45f2e661689d" class=""><mark class="highlight-blue"><span style="border-bottom:0.05em solid">九、如何联系我们</span></mark></p><h1 id="40c97e56-28e9-44cb-8499-d247d4509a2f" class="">一、我们如何收集和使用您的个人信息</h1><h2 id="47db454e-8aed-4859-ba0e-980e9dfbc59f" class="">词语释义</h2><ol type="1" id="c90bb396-2b94-4ea7-a6da-01c46ec22dcb" class="numbered-list" start="1"><li>缘遇平台产品或服务是指：我们及关联方通过合法拥有并运营的、标注名称包含“缘遇”的客户端应用程序，向您提供的产品与服务，包括但不限于视频通话、图文发布及相应浏览、展示、关注、私信、互动打赏等功能。</li></ol><ol type="1" id="a0761e2d-a959-45e7-bc6e-1995a9ccda57" class="numbered-list" start="2"><li>个人信息是指：以电子或者其他方式记录的能够单独或者与其他信息结合识别特定自然人身份或者反映特定自然人活动情况的各种信息。本政策个人信息包括姓名、出生日期、身份证件号码、个人生物识别信息、住址、通信通讯联系方式、通信记录和内容、账号密码、财产信息、征信信息、行踪轨迹、住宿信息、健康生理信息、网络身份识别信息、常用设备信息、交易信息、<strong>唯一设备标识符（IMEI/Mac/androidID/IDFA/OPENUDID/GUID、SIM卡 IMSI信息）</strong>、电池、信号强度信息等。</li></ol><ol type="1" id="2e3e2400-852e-499f-aaae-05f89d611b17" class="numbered-list" start="3"><li>个人敏感信息是指：一旦泄露、非法提供或滥用可能危害人身和财产安全，极易导致个人名誉、身心健康受到损害或歧视性待遇等的个人信息。本政策中的个人敏感信息包括身份证件号码、个人生物识别信息、通信记录和内容、个人健康生理信息、个人财产信息、银行账号、征信信息、行踪轨迹、住宿信息、交易信息、14岁周岁以下（含）儿童的个人信息等。</li></ol><ol type="1" id="b2711a8d-fd24-4bee-a5d8-8df95573edf4" class="numbered-list" start="4"><li>身份要素是指：产品用于识别您身份的信息要素，例如：您的登录名、密码、短信校验码、电话号码、手机号码、证件号码及个人生物识别信息（例如：指纹信息、脸部信息）。</li></ol><ol type="1" id="0cb621a2-521a-44b0-964e-07a05561a537" class="numbered-list" start="5"><li>非个人信息：通过对个人信息的技术处理（包括匿名化、去标识化等），使得处理后的信息无法单独或结合其他信息识别到您的个人身份，且处理后的信息不能被复原，处理后的信息不属于法律意义上您的个人信息。但当个人信息与处理后的信息结合使用期间，这些结合信息将作为您的个人信息按照本政策处理与保护。</li></ol><h2 id="7117f71b-9ad2-4119-924f-544de3fd5540" class="">收集和使用个人信息的目的</h2><p id="10691db3-168b-4150-b0ca-18d8319868a1" class="">我们仅会出于本政策所述的以下目的，收集和使用您的个人信息：</p><ol type="1" id="fb3282ee-f735-4efb-822f-f8f1eddfd5e5" class="numbered-list" start="1"><li>保障产品服务能够正常运行；</li></ol><ol type="1" id="9c531b36-fa54-4e7f-b424-4a2862a12d63" class="numbered-list" start="2"><li>保障产品服务、用户使用的安全；</li></ol><ol type="1" id="8e40f5bb-9cd9-4eba-afed-ae950dfd28f1" class="numbered-list" start="3"><li>实现产品功能或服务需求；</li></ol><ol type="1" id="1d028ddd-651c-434f-883d-588f13be8ee6" class="numbered-list" start="4"><li>您操作、使用的行为信息:点击、关注、搜索、浏览，推荐您相关信息，如您不想接受相关推送，您可以点击软件底部【我的-系统设置-隐私设置】页面，将【个性化推荐】关闭</li></ol><ol type="1" id="a856dcd4-4f43-44e8-9488-d3b15a767b59" class="numbered-list" start="5"><li>如您想注销账号，您可以点击软件底部【我的-系统设置-账号注销协议】页面，注销您的账号</li></ol><ol type="1" id="e17970d1-e55a-4fc5-9c7f-f1fcbe4da8f2" class="numbered-list" start="6"><li>如想查询、更正或删除您的个人信息，您可以点击软件底部【我的-编辑资料】，来查询、更正或删除您的个人信息</li></ol><ol type="1" id="45f02e27-0583-4de7-9d1a-d385c80ef3ed" class="numbered-list" start="7"><li>评估、改善广告投放和其他促销及推广活动的效果；</li></ol><ol type="1" id="5356fa18-de3b-4e55-9723-39852eceb881" class="numbered-list" start="8"><li>管理软件，例如，软件认证、软件升级等；</li></ol><ol type="1" id="5f706a39-3bb7-4ccc-8500-150c01b9ecd0" class="numbered-list" start="9"><li>遵循法律法规及国家标准的规定。</li></ol><p id="36c115fc-0f49-449c-90e4-ba17848009f8" class="">当您在激活使用时，我们会通过ThinkingAnalytics-SDK<span style="border-bottom:0.05em solid"><strong>收集您的设备信息（IDFV、AndroidID、操作系统、设备型号、设备制造商、系统版本、应用进程信息等）用于统计分析您在App内的使用效果。</strong></span></p><p id="a8bff74d-abf8-4462-a49d-bf4993b1b9c7" class="">当您使用本APP的消息服务功能时，为了保证您能及时收到消息，我们需要 使用自启动服务以便让您能及时收到消息，如果您想关闭自启动功能，可能会 导致无法正常接收到消息。您可以在设置-应用-自启动管理中关闭自启动功能。 我们要将个人信息用于本政策未载明的其它用途时，会事先征求您的同意。 当我们要将基于特定目的收集而来的信息用于其他目的时，会事先征求您的同意。</p><h2 id="bfc2fe8c-c178-405c-ae87-bf4f795699f9" class="">我们直接收集和与使用的个人信息</h2><ol type="1" id="5a47c647-64b9-4cac-bba8-da65eb86e960" class="numbered-list" start="1"><li>业务功能：保障本平台正常运行。<p id="dd46abac-44b3-4c02-84ce-adf34bc1a41c" class="">当您注册缘遇服务时，为完成创建账号，您需要提供以下信息：<span style="border-bottom:0.05em solid"><strong>手机号码、昵称、年龄、性别、个人照片（用做头像）、剪切板验证码信息（用于便捷完成验证码输入）</strong></span>，收集这些信息是为了帮助你完成缘遇账户注册和使用社交功能。</p><p id="2fffb7f2-9ce9-4d0c-b63d-9796287b180e" class="">我们会根据您在安装、访问及使用“缘遇”软件及相关服务的过程中或软件在后台运行时授予的具体权限收集您所使用的设备相关信息，包括<span style="border-bottom:0.05em solid"><strong>设备型号、操作系统版本、设置参数、设备配置、设备标识（IMEI/Android ID/OAID/IDFA/IDFV/MEID/UDID/SIM卡IMSI信息/ICCID/SIM卡状态/VAID/AAID等）、设备序列号、MAC地址、设备网络信息(运营商信息/WIFI信息/WIFI状态/WIFI列表/SSID/BSSID)、设备环境、软件列表/应用列表、运行中的进程信息、传感器列表等软硬件特征信息）、设备所在位置相关信息（包括您授权的GPS位置以及WLAN接入点、蓝牙和基站等传感器信息）</strong></span>，用于保障软件与服务的安全运行、运营的质量及效率。</p><p id="6b5c0073-5507-4140-8b63-dfdcd211e3b4" class=""><span style="border-bottom:0.05em solid"><strong>手机号码、个人照片属于敏感信息</strong></span>，收集此类信息是为了满足国家法律法规的网络实名制要求以及完成缘遇账号的注册。</p><p id="620adffa-a541-44cb-8a6b-f45ca9f34f83" class="">若您不提供这类信息，您可能无法正常使用我们的服务。</p></li></ol><ol type="1" id="eae28eb8-c183-44ff-8c5a-76f510be1c5a" class="numbered-list" start="2"><li>业务功能：注册账号<ol type="a" id="1b391f46-b29f-4ab1-9388-be051b68455f" class="numbered-list" start="1"><li>当您通过移动手机号码注册产品账号时，为完成注册，您需提供完整的、可接收短信或<span style="border-bottom:0.05em solid"><strong>电话的手机号码</strong></span>，我们将通过发送短信验证码或语音验证码的方式确认您的身份是否有效。通过验证且您阅读并同意本政策及用户协议后，将完成账号注册。</li></ol><ol type="a" id="f90d2314-650c-4a06-903c-49667536e1e1" class="numbered-list" start="2"><li>当您通过第三方账号（例如微信等）登录产品，您需要授权我们获取您登录所使用的<span style="border-bottom:0.05em solid"><strong>第三方账号的公开信息（例如头像、昵称、性别及您授权的其他信息等）</strong></span>，并将该账号与您的产品账号进行绑定。如果您不同意授权或拒绝我们获取上述信息，您将无法通过第三方账号登录产品，但不影响您正常使用产品的其他功能。</li></ol><ol type="a" id="d9556d11-2381-4923-8be6-0d7675ecac11" class="numbered-list" start="3"><li>完成产品账号注册后，您可以自行决定是否需要完善您的头像、昵称、年龄、身高、性别、年收入、学历、家乡、行业、经常出没的地方、个人简介、个人喜好、婚姻状态等网络身份识别信息。如果您完善以上额外信息，将有助于我们为您提供更好的服务和体验，但如果您不提供上述信息，将不会影响使用产品的基本功能。</li></ol><ol type="a" id="47bbc977-8c95-44d8-bd46-228816715e77" class="numbered-list" start="4"><li>基于我们与通信运营商的合作，当您使用“一键登录”功能时，经过您的明示同意，运营商会将您的手机号码发送给我们，便于我们为您提供快捷的登录服务。手机号码属于个人敏感信息，如果拒绝提供将无法使用“一键登录”方式注册登录产品，但不影响您通过其他方式注册登录，也不影响其他功能的正常使用。</li></ol></li></ol><ol type="1" id="45515737-9b64-480c-84f4-812df27f00bc" class="numbered-list" start="3"><li>业务功能：实现音视频通话、私信聊天及图文发布等功能或服务<p id="a97c78da-b784-4611-bbb9-c91364861ad7" class="">您主动进行音视频通话、发布音视频、评论信息、图文等时，我们将收集<span style="border-bottom:0.05em solid"><strong>音视频、图文等相应信息，并展示您的昵称、头像、发布信息内容等</strong></span>。</p><ol type="1" id="69057ca0-dbc2-4a16-a517-12f2217bccc9" class="numbered-list" start="1"><li>您发布音视频、图片等内容或进行评论时，我们将收集您发布的信息，并展示您的昵称、头像、发布的内容。</li></ol><ol type="1" id="970cf8da-a71a-41ec-9235-6afe6802f317" class="numbered-list" start="2"><li>您使用发布图片、音视频通话功能时，<span style="border-bottom:0.05em solid"><strong>我们会请求您授权相机、照片的读取和储存权限以及麦克风的使用权限</strong></span>。您如果拒绝授权提供，将无法使用此功能，但不影响您正常使用其他功能。</li></ol><ol type="1" id="d2239e90-4520-4f1c-b839-1f07dba4d21e" class="numbered-list" start="3"><li>您发布音视频、图文等信息并选择显示地理位置，我们会请求您<span style="border-bottom:0.05em solid"><strong>授权地理定位（属于个人敏感信息）权限，并收集与上述功能相关的定位信息。我们收集定位信息的技术包括IP地址、GPS、WLAN等传感器技术。您如果不同意或拒绝授权提供，将无法使用此功能，但不影响您正常使用产品的其他功能。</strong></span></li></ol><ol type="1" id="5f145586-0784-4da2-b65b-de3e558edacc" class="numbered-list" start="4"><li>您使用发起音视频通话其他需要进行身份认证的功能或服务时，根据中华人民共和国相关法律法规规定，<span style="border-bottom:0.05em solid"><strong>您需要提供真实身份信息（包括但不限于真实姓名、手机号码、身份证号等个人敏感信息），用于完成实名认证</strong></span>。如果您不提供上述信息或信息不真实，将无法使用此功能，但不影响您正常使用产品的其他功能。</li></ol></li></ol><ol type="1" id="12c394a5-b6d7-45d3-8f43-9f775af2dded" class="numbered-list" start="4"><li>业务功能：实现互动交流功能或服务<ol type="a" id="e28e3180-d096-4e48-ad4a-9632dc189e48" class="numbered-list" start="1"><li>您主动关注您感兴趣的用户账号并与其他账号进行交流互动、进行评论或分享内容时，我们会收集<span style="border-bottom:0.05em solid"><strong>您关注的账号，并向您展示您关注账号发布内</strong></span>容。</li></ol><ol type="a" id="4fc1fa8b-2cab-46b4-b273-a7705a566ccf" class="numbered-list" start="2"><li>您主动点赞、评论或分享您感兴趣的音视频、图文等信息时，我们会<span style="border-bottom:0.05em solid"><strong>收集您点赞、评论或分享的内容</strong></span>，并向您点赞或评论的用户进行展示或通知。</li></ol><ol type="a" id="f7204320-2f67-44ee-9566-353f19ef9511" class="numbered-list" start="3"><li>您主动使用虚拟货币向其他用户进行打赏时，我们将<strong><span style="border-bottom:0.05em solid">收集您的头像、昵称及打赏的数据</span></strong>，并向其他用户进行展示。</li></ol></li></ol><ol type="1" id="924d7287-b4c0-49a4-a2a7-1af63e7fca36" class="numbered-list" start="5"><li>业务功能：实现搜索服务 <p id="278f69cb-15e3-4e47-b623-926030f91463" class="">您使用产品的搜索服务时，我们<span style="border-bottom:0.05em solid"><strong>会收集您的搜索关键字信息、日志记录</strong></span>等。为了提供高效的搜索服务，部分前述信息会暂时存储在您的设备之中，并可向您展示搜索结果内容、搜索历史记录。您可以自主选择是否清除上述搜索历史记录。</p></li></ol><ol type="1" id="f42977a7-6334-4a2a-962b-9ef0da2e6905" class="numbered-list" start="6"><li>业务功能：充值、查询虚拟货币<p id="f71b0466-d484-4cef-83ec-38891aa5e5e8" class="">您主动进入「余额」功能时，可查询您的虚拟货币剩余数量，并可通过该页面进行购买充值。我们会<span style="border-bottom:0.05em solid"><strong>收集您的余额信息</strong></span>，并在「余额」功能页面显示。当您使用涉及支付的功能时，产品支付通过第三方支付机构所提供的支付服务完成，第三方支付服务有可能使用生物识别信息用于付款验证，您在使用第三方支付服务的时请阅读该第三方机构的隐私政策，如果对于该约定不同意，请您及时停止该第三方支付服务。</p></li></ol><ol type="1" id="d3f18192-1e97-4b75-a478-e75e3952d130" class="numbered-list" start="7"><li>业务功能：保障产品、服务及用户使用安全<p id="80135d35-d7f1-4e85-b209-ec775f52d655" class="">为帮助我们更好地实现了解产品运行情况、判断账户安全、进行身份验证、检测及防范安全事件的目的，我们<span style="border-bottom:0.05em solid"><strong>可能记录网络日志信息、应用信息、正在运行的进程信息、应用程序的总体运行、使用情况与频率、应用崩溃情况、总体安装使用情况、性能数据及应用来源等信息。</strong></span></p></li></ol><ol type="1" id="8c59df32-8844-4c60-9a94-fcaba578b5ab" class="numbered-list" start="8"><li>业务功能：身份认证<p id="a7d57fa0-adbc-45e8-bbda-e2e93790e98d" class="">根据法律法规及监管要求，当您使用产品的身份认证、提现、领取红包等类似功能或相关服务时，<span style="border-bottom:0.05em solid"><strong>需要您提供有效的身份证件信息（提示您适时提供有效身份证件的信息或彩色影印件或照片以供我们核对并留存）、联系方式、地址等个人信息，以完成身份基本信息多重交叉验证。</strong></span>这些信息属于个人敏感信息，您可以拒绝提供，如果您不提供前述信息，将无法使用此功能，但不影响您正常使用产品的其他功能。</p></li></ol><ol type="1" id="e09a2dc6-16bb-4baa-8410-325027d905b3" class="numbered-list" start="9"><li>业务功能：系统发送广播信息<p id="2d526f08-2fcf-4f27-a615-da5ef25381f5" class="">为使您及时获取其他用户向您发送的信息，为及时让您了解系统更新等功能信息，当您退出APP登录时，<span style="border-bottom:0.05em solid"><strong>您同意我们通过系统向您发送广播唤醒服务或关联启动服务</strong></span>，以便于为您提供即时通讯功能。</p></li></ol><h2 id="06efd5ac-3d97-42f3-ba99-cefcef28059e" class="">我们从第三方获得的个人信息</h2><ol type="1" id="e40c747f-e879-47de-ba29-7b61e0aca7de" class="numbered-list" start="1"><li>其他用户因使用我们的产品而被我们收集的信息，例如其他用户发布的信息中可能含有您的部分个人信息（如：在评论、留言、直播、发布图文、音视频中涉及到与您相关的信息）。</li></ol><ol type="1" id="76907c2a-8aa4-4484-822d-a346ee2bbbac" class="numbered-list" start="2"><li>在您使用产品提供的身份认证功能时，我们会根据相关法律法规规定和/或该身份认证功能（如芝麻信用）所必需，我们将采用行业内通行的方式及尽最大的商业努力来保护您个人敏感信息的安全。如果您不提供这些信息，您将可能无法获得相关服务，但不影响您正常使用其他功能。</li></ol><ol type="1" id="e3f2cebc-5f38-4e49-8d8d-a1302dc695a3" class="numbered-list" start="3"><li>您使用第三方账号登录时，可选择授权产品在符合法律法规要求的前提下读取并获得您在第三方平台上登记、公布、记录的公开信息（包括昵称、头像等）。我们需要您授权从第三方获取上述信息是为了记住您作为产品用户的登录身份，以便向您提供更优质的产品服务。我们仅会在您的授权同意范围内收取并使用您的个人信息。</li></ol><ol type="1" id="9cc0d94a-587d-406c-8416-de8498d08348" class="numbered-list" start="4"><li>我们可能会为您接入了丰富的第三方服务，您可通过功能图标或信息页面进入第三方页面使用第三方服务。</li></ol><p id="ed5a0c20-1818-4ab1-80b2-f3ea43150617" class="">您需要注意，本政策仅说明收集信息的情形，我们实际从第三方间接获取的个人信息范围以页面展示为准。本政策不能作为第三方服务的隐私政策条款，我们强烈建议您在使用第三方服务前阅读并理解第三方服务有关的服务协议及隐私政策的具体内容，了解第三方服务向您收集使用个人信息的规则，所能提供的保护和您能享有的个人信息权利。</p><h2 id="b6fc3204-1f91-4210-b001-8f6cbed5ae59" class="">收集、使用个人信息目的变更</h2><p id="5b827384-3a62-4d97-95d9-8328cd4569f2" class="">我们可能随着业务的发展，会对产品有所调整。当新功能或服务与注册、音视频展示、发布图文、账号展示、互动交流、搜索、查询、认证、虚拟货币等场景相关时，收集与使用的个人信息属于与原目的具有直接关联。在与原目的无直接关联的场景下，我们收集、使用您的个人信息，会再次征得您的同意。</p><h2 id="81fb8358-a8f6-42dd-9a50-27f378839a98" class="">无需征得同意收集和使用的个人信息</h2><p id="c60c40d4-c309-4412-a0d6-78e5d190869d" class="">根据法律法规及相关国家标准，我们在下列任意一种或多种情形下收集和使用您的个人信息无需征得您的授权同意。</p><p id="3aa51739-2c34-48ef-971c-007fc759a3e6" class="">为订立、履行个人作为一方当事人的合同所必需，或者按照依法制定的劳动规章制度和依法签订的集体合同实施人力资源管理所必需；</p><p id="5b02622c-aea2-4315-a182-7ea8394a3c27" class="">为履行法定职责或者法定义务所必需；</p><p id="f9b8b912-8b09-406e-b20f-13d2733f6d34" class="">为应对突发公共卫生事件，或者紧急情况下为保护自然人的生命健康和财产安全所必需；</p><p id="9f61405f-8225-4416-8719-d75c157736f8" class="">为公共利益实施新闻报道、舆论监督等行为，在合理的范围内处理个人信息；</p><p id="7f4360c1-9be6-472c-9c51-efb5ef13675e" class="">依照本法规定在合理的范围内处理个人自行公开或者其他已经合法公开的个人信息；</p><p id="9db11f61-dbbf-4897-8627-e512ececf5e8" class="">法律、行政法规规定的其他情形。</p><h1 id="f7526ff6-ee14-44e7-af64-d5d57a064a0c" class="">二、我们如何使用 Cookie 和同类技术</h1><h2 id="4774a283-918b-49a9-b0a7-e35bc018a2ea" class="">Cookie</h2><p id="9e7ed5c2-0d1e-4d4b-bf67-c3b3614d3818" class="">为确保应用正常运转，我们会在您的计算机或移动设备上存储名为 Cookie 的小数据文件。Cookie 通常包含标识符、站点名称以及一些号码和字符。借助于 Cookie，应用能够存储您的好友和聊天记录等数据。</p><p id="87af5748-50ea-472f-b935-978e8448ce15" class="">我们不会将 Cookie 用于本政策所述目的之外的任何用途。您可根据自己的偏好管理或删除 Cookie。您可以清除计算机上保存的所有 Cookie，大部分网络浏览器都设有阻止 Cookie 的功能。但如果您这么做，则需要在每一次访问我们的应用时亲自更改用户设置。如需详细了解如何更改浏览器设置，请查询设置。</p><h2 id="6366bed0-404c-4ca1-a554-b3db1df33814" class="">Do Not Track（请勿追踪）</h2><p id="b8aefa2d-999c-4306-ac09-f9eae32e79ef" class="">很多网络浏览器均设有 Do Not Track 功能，该功能可向网站发布 Do Not Track 请求。目前，主要互联网标准组织尚未设立相关政策来规定网站应如何应对此类请求。但如果您的浏览器启用了 Do Not Track，那么我们的所有网站都会尊重您的选择。</p><h2 id="f198df5b-9f97-402c-8ad8-60847b505da2" class="">SDK技术</h2><p id="79586b03-6238-40a6-a4e4-0e7f1768bef4" class="">为保证产品相关功能的实现与应用安全稳定的运行，我们可能会接入由第三方服务提供商提供的软件开发包（SDK）实现相关目的。我们会对合作获取信息的软件工具开发包（SDK）进行严格的安全监测，以保证数据安全。SDK的明细如下列：</p><ul id="75d1f09f-4dac-46ef-9813-c3b774576bc4" class="bulleted-list"><li style="list-style-type:disc">缘遇接入第三方软件开发包目录</li></ul><ol type="1" id="eedd5a96-8c39-4070-99a1-b957bdcb0113" class="numbered-list" start="1"><li>数美SDK <ol type="a" id="a9b5ea7f-7918-45f8-b7c8-dca514b81f4e" class="numbered-list" start="1"><li>第三方公司名称：数美天下(北京)科技有限公司</li></ol><ol type="a" id="56ef8540-b647-48fd-85d7-98ab29403b8a" class="numbered-list" start="2"><li>涉及个人信息：IMEI、ICCID、IMSI、MAC地址、蓝牙MAC地址、SIM卡信息、唯一设备识别码、设备硬件序列号、设备名称内存基本配置信息、系统及软件相关配置信息、WIFI及蜂窝网络信息、传感器、设备序列号、设备环境<ol type="i" id="53519726-0b02-4737-9466-ed9d4cd38519" class="numbered-list" start="1"><li>存在数美SDK获取设备基本信息(包括设备品牌、设备制造商、设备型号、设备名称、设备系统类型及版本信息、设备基本设置、设备环境)的行为</li></ol><ol type="i" id="448e426d-7ddd-40ba-9fcd-5a13bcec872d" class="numbered-list" start="2"><li>存在数美SDK获取设备标识信息，包括Android ID、IDFV（应用开发商标识符）、IDFA（广告标示符）的行为</li></ol><ol type="i" id="aeadd48c-610a-4970-be71-c062ed0e9159" class="numbered-list" start="3"><li>存在数美SDK获取设备网络信息(包括网络的接入形式、周边WIFI列表、网络运营商信息、网络连接状态)的行为</li></ol><ol type="i" id="1457ca28-968a-45e3-a246-a797b0b61a04" class="numbered-list" start="4"><li>存在数美SDK获取设备应用信息(包括SDK宿主应用包名及版本号、运行中进程信息（仅获取当前进程名称）)的行为</li></ol></li></ol><ol type="a" id="43f4e9d8-d987-4d11-bde8-fd885fb5ffef" class="numbered-list" start="3"><li>使用目的：安全风控</li></ol><ol type="a" id="ebdf05f3-980c-4358-9902-ae5c3148b3a2" class="numbered-list" start="4"><li>使用场景：收集涉嫌作弊或风险行为的账号信息，用于风险控制和反欺诈，以保账户安全</li></ol><ol type="a" id="23ddc2ed-cd42-4643-bf79-6759eb03e58e" class="numbered-list" start="5"><li>隐私链接：<a href="https://www.ishumei.com/legal/cn/privacy.html">https://www.ishumei.com/legal/cn/privacy.html</a></li></ol></li></ol><ol type="1" id="f87a832f-5ea6-44a8-8648-bb13968fe89a" class="numbered-list" start="2"><li> openinstall<ol type="a" id="30d5d547-59c0-4abf-8182-02c3b3f91352" class="numbered-list" start="1"><li>第三方公司名称：分秒网络科技有限公司</li></ol><ol type="a" id="2e6bfedd-bbf4-4960-8a2a-72be7ea53f16" class="numbered-list" start="2"><li>使用目的：邀请人脉</li></ol><ol type="a" id="59284ee3-59b5-4622-b1f1-330cae2e3bc2" class="numbered-list" start="3"><li>涉及个人信息：设备品牌，设备型号，操作系统版本，语言, IP地址，屏幕尺寸, 粘贴板、剪切板信息, 联网方式, 设备标识符 (国际移动设备识别码(IMEI)、安卓设备唯一识别码(Android ID)、广告标识符(IDFA) 等), 应用信息（应用名、应用版本号）<ol type="i" id="fb69bc2d-c6f9-4f3b-bd6e-a561fe4915fd" class="numbered-list" start="1"><li>存在openinstall SDK获取设备品牌、openinstall SDK获取设备型号、openinstall SDK获取操作系统版本、openinstall SDK获取IP地址、openinstall SDK获取粘贴板（剪切板）的行为用于数据统计和分析</li></ol><ol type="i" id="bb0a5a78-3cf1-4dfd-84ca-97f9dbe75e90" class="numbered-list" start="2"><li>存在openinstall SDK获取Android ID、openinstall SDK获取设备序列号（SerialNumber）、openinstall SDK获取本地存储权限的行为，用于数据统计作弊监控</li></ol><ol type="i" id="828ae855-03d3-4ba3-89d6-bc12bd3bc1a3" class="numbered-list" start="3"><li>存在openinstall SDK获取IMEI、openinstall SDK获取IDFA、openinstall SDK获取OAID、openinstall SDK获取Mac地址，openinstall SDK获取用户传入或系统API采集的行为，用于移动广告效果监测</li></ol></li></ol><ol type="a" id="3e8f72ac-26da-455e-9c79-119dd4740d7a" class="numbered-list" start="4"><li>使用方式：用于数据统计和分析</li></ol><ol type="a" id="4cf661da-1831-4f9c-ad37-d80f86d56f35" class="numbered-list" start="5"><li>隐私链接：<a href="https://www.openinstall.io/doc/rules.html">https://www.openinstall.io/doc/rules.html</a></li></ol></li></ol><ol type="1" id="d0526bf3-e6c6-4185-a0b5-fbc2d18be1f8" class="numbered-list" start="3"><li>微信SDK <ol type="a" id="157bcb48-5876-406f-bd65-842f98cd9512" class="numbered-list" start="1"><li>第三方公司名称：深圳市腾讯计算机系统有限公司</li></ol><ol type="a" id="97216c5a-27b7-4e28-8f98-9a74a34359c8" class="numbered-list" start="2"><li>涉及个人信息：终端设备唯一标识符（IDFV、OAID、IMEI、MEID、IMSI）、mac地址、操作系统版本、设备品牌及型号、设备配置、运营商类型、应用信息（应用名、应用版本号）<ol type="i" id="03934194-a545-4381-8f3e-82b2d02c59fd" class="numbered-list" start="1"><li>存在微信SDK获取设备型号、微信SDK获取操作系统、微信SDK获取唯一设备标识符（Android端如AndroidID/OAID、iOS端如iOS14.5之前的IDFA）、微信SDK获取登录IP地址、微信SDK获取微信软件版本号、微信SDK获取接入网络的方式、微信SDK获取类型和状态（如SSID和BSSID）、微信SDK获取网络质量数据、微信SDK获取设备加速器（如重力感应设备）、微信SDK获取操作日志、微信SDK获取服务日志信息（如在微信进行搜索、查看操作的记录、服务故障信息、引荐网址等信息）等日志信息行为用于保障用户正常使用微信的服务，维护服务正常运行，改进及优化微信的服务体验以及保障账号安全</li></ol><ol type="i" id="4b3fceb2-f669-42a2-a64e-732939b52387" class="numbered-list" start="2"><li>存在微信SDK获取设备安装的应用信息、微信SDK获取正在运行的进程信息或设备内存中寄存的数据行为，用于防止个人信息泄露，预防病毒、木马程序或其他恶意程序、网站。</li></ol></li></ol><ol type="a" id="9049bc45-7bf1-4051-88f7-079df9e36127" class="numbered-list" start="3"><li>使用目的：充值支付</li></ol><ol type="a" id="79b7779a-99cd-4055-83a1-f4fd49e86c7e" class="numbered-list" start="4"><li>使用场景：给用户提供充值渠道</li></ol><ol type="a" id="3234273d-3cf1-4b69-88b0-d78ffb5b6733" class="numbered-list" start="5"><li>隐私链接：<a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&amp;t=weixin_agreement&amp;s=privacy">https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&amp;t=weixin_agreement&amp;s=privacy</a></li></ol></li></ol><ol type="1" id="d450a005-bce2-4092-9ad3-9bc0558ff9ea" class="numbered-list" start="4"><li>App 支付宝客户端 SDK<ol type="a" id="75dcbb74-bcc6-485f-bda0-9bf3c9ce5f19" class="numbered-list" start="1"><li>第三方公司名称：支付宝（中国）网络技术有限公司</li></ol><ol type="a" id="a70bda44-6cc7-4260-9327-cc527f209ab2" class="numbered-list" start="2"><li>涉及个人信息：身份信息(姓名、身份证号码、银行卡号、手机号码、邮箱地址、收货地址、芝麻信用分)、交易信息(交易金额、交易时间、交易地点、交易商品或服务、交易对方)、IMEI、IMSI、Android ID、MAC地址、硬件序列号、ICCID、SSID、BSSID、传感器信息、网络类型、运营商信息、WIFI状态/参数/列表、系统设置、系统属性、设备品牌、设备型号、操作系统、应用信息（应用名、应用版本号）、联网方式<ol type="i" id="9b8e825b-6ba0-42f6-ba2f-4b69cb0ca45f" class="numbered-list" start="1"><li>存在App 支付宝客户端 SDK获取Android ID、App 支付宝客户端 SDK获取OAID、App 支付宝客户端 SDK获取SSID、App 支付宝客户端 SDK获取BSSID；App 支付宝客户端 SDK获取系统设置、App 支付宝客户端 SDK获取系统属性、App 支付宝客户端 SDK获取设备型号、App 支付宝客户端 SDK获取设备品牌、App 支付宝客户端 SDK获取操作系统；App 支付宝客户端 SDK获取IP 地址、App 支付宝客户端 SDK获取网络类型、App 支付宝客户端 SDK获取运营商信息、App 支付宝客户端 SDK获取Wi-Fi 状态、App 支付宝客户端 SDK获取Wi-Fi 参数、App 支付宝客户端 SDK获取Wi-Fi 列表行为用于保障用户账户和资金安全以及支付服务的安全稳定运行、履行反洗钱、反恐怖融资、反电信网络诈骗等法定义务、实现网络链路的选择和优化，以提升用户体验。</li></ol></li></ol><ol type="a" id="7db47285-92bb-425a-8932-ccc7e1dcac12" class="numbered-list" start="3"><li>使用目的：充值支付</li></ol><ol type="a" id="45dae347-7302-4749-bbe5-fe2aca593b95" class="numbered-list" start="4"><li>使用场景：给用户提供充值渠道以及支付过程中的安全风控</li></ol><ol type="a" id="b625bd29-bfef-4942-8bc2-449e37391315" class="numbered-list" start="5"><li>隐私链接：<a href="https://opendocs.alipay.com/open/54/01g6qm">https://opendocs.alipay.com/open/54/01g6qm</a></li></ol></li></ol><ol type="1" id="b7deb6b6-23c4-4a17-99d6-21c36e8a6bee" class="numbered-list" start="5"><li>zego即构SDK <ol type="a" id="88be9e44-e993-4d46-a400-8e596ccc7663" class="numbered-list" start="1"><li>第三方公司名称：深圳市即构科技有限公司</li></ol><ol type="a" id="5730c261-0f1a-45b2-88f5-fa24edf36ec7" class="numbered-list" start="2"><li>涉及个人信息：：唯一设备识别码（APNS Token、设备序列号、AndroidID、OAID、GAID、IDFV、CID、MAC地址）；设备运行状态（SIM卡状态、USB状态、充电状态、电池容量及电量、锁屏时间、启动时间）；设备基本信息（设备品牌及型号、设备厂商、设备所运行系统版本、名称、编辑版本信息、系统内核信息、CPU型号、设备内存及存储大小、屏幕亮度及分辨率、设备输入装置、设备架构、基带信息、字体HASH、HOSTNAME、辅助功能列表、模拟器信息）；日志信息（网络连接类型及状态、WIFISSID、WIFIBSSID、IP地址、运营商信息、网络代理、云信通信服务运行日志）、应用信息（应用名、应用版本号）、联网方式、音视频信息(音频采样率、音频编码格式、视频分辨率、视频编码格式)<ol type="i" id="e7247f29-8770-4435-b0ea-1b83e72689e8" class="numbered-list" start="1"><li>存在zego即构SDK 获取唯一设备识别码（APNS Token、设备序列号、AndroidID、OAID、GAID、IDFV、CID、MAC地址）行为，用于区分设备、消息同步、创建房间、识别身份、及时定位产品问题及缺陷</li></ol><ol type="i" id="f3c5b450-f933-4ef9-a356-c78d480a0a05" class="numbered-list" start="2"><li>存在zego即构SDK 获取设备运行状态（SIM卡状态、USB状态、充电状态、电池容量及电量、锁屏时间、启动时间）行为，用于区分设备、消息同步、创建房间、识别身份、及时定位产品问题及缺陷</li></ol><ol type="i" id="3432f4a8-87bf-4c7e-8662-356061bfd5d0" class="numbered-list" start="3"><li>存在zego即构SDK 获取设备基本信息（设备品牌及型号、设备厂商、设备所运行系统版本、名称、编辑版本信息、系统内核信息、CPU型号、设备内存及存储大小、屏幕亮度及分辨率、设备输入装置、设备架构、基带信息、字体HASH、HOSTNAME、辅助功能列表、模拟器信息）行为，用于区分设备、消息同步、创建房间、识别身份、及时定位产品问题及缺陷</li></ol><ol type="i" id="c985683a-d9e3-4581-a830-6f0daf5ce7c2" class="numbered-list" start="4"><li>存在zego即构SDK 获取日志信息（网络连接类型及状态、WIFISSID、WIFIBSSID、IP地址、运营商信息、网络代理、云信通信服务运行日志）行为，用于及时定位产品问题、保证服务质量稳定、及时定位产品问题及缺陷</li></ol><ol type="i" id="a5664d3c-4d49-4735-b45f-fe2e69d69da8" class="numbered-list" start="5"><li>存在zego即构SDK 获取应用信息（应用名、应用版本号）行为，用于多设备消息同步的功能、及时定位产品问题及缺陷</li></ol><ol type="i" id="6917b57b-4d60-4191-a8e6-370aadce5acd" class="numbered-list" start="6"><li>存在zego即构SDK 获取联网方式行为，用于及时定位产品问题及缺陷</li></ol><ol type="i" id="c47ef804-159c-4a87-b0a9-a31c0694d66f" class="numbered-list" start="7"><li>存在zego即构SDK 获取音视频信息(音频采样率、音频编码格式、视频分辨率、视频编码格式)行为，用于实时语音、语音消息、视频功能</li></ol></li></ol><ol type="a" id="fd06b31c-5bc5-463c-82ce-e062e5a15894" class="numbered-list" start="3"><li>使用目的：即时通讯</li></ol><ol type="a" id="782c6116-01d6-4f97-80e8-ab0e3e244fdd" class="numbered-list" start="4"><li>使用场景：提供消息投递、多端消息同步、消息漫游功能，同时为了预防安全风险，准确识别违反法律法规的情况</li></ol><ol type="a" id="1f0d8ea0-a3d2-478d-8850-f7aba9091643" class="numbered-list" start="5"><li>隐私链接：<a href="https://www.zego.im/privacy">https://www.zego.im/privacy</a></li></ol></li></ol><ol type="1" id="8d0e100e-3de6-4629-9898-0f9114086252" class="numbered-list" start="6"><li>即构RTC、即构RTM <ol type="a" id="fddbed9f-7f2f-46f3-a1af-c1a8d887c76f" class="numbered-list" start="1"><li>第三方公司名称：深圳市即构科技有限公司</li></ol><ol type="a" id="c61adccd-205a-4552-968e-a5f61c437cd8" class="numbered-list" start="2"><li>涉及个人信息：唯一设备识别码（APNS Token、设备序列号、AndroidID、OAID、GAID、IDFV、CID、MAC地址）；设备运行状态（SIM卡状态、USB状态、充电状态、电池容量及电量、锁屏时间、启动时间）；设备基本信息（设备品牌及型号、设备厂商、设备所运行系统版本、名称、编辑版本信息、系统内核信息、CPU型号、设备内存及存储大小、屏幕亮度及分辨率、设备输入装置、设备架构、基带信息、字体HASH、HOSTNAME、辅助功能列表、模拟器信息）；日志信息（网络连接类型及状态、WIFISSID、WIFIBSSID、IP地址、运营商信息、网络代理、云信通信服务运行日志）、应用信息（应用名、应用版本号）、联网方式、音视频信息(音频采样率、音频编码格式、视频分辨率、视频编码格式)<ol type="i" id="808a91f2-1f5a-46ae-9e82-569d4d27b8b7" class="numbered-list" start="1"><li>存在zego即构SDK 获取唯一设备识别码（APNS Token、设备序列号、AndroidID、OAID、GAID、IDFV、CID、MAC地址）行为，用于区分设备、消息同步、创建房间、识别身份、及时定位产品问题及缺陷</li></ol><ol type="i" id="97172c0d-de2a-4a5c-9dba-71fe20266a01" class="numbered-list" start="2"><li>存在zego即构SDK 获取设备运行状态（SIM卡状态、USB状态、充电状态、电池容量及电量、锁屏时间、启动时间）行为，用于区分设备、消息同步、创建房间、识别身份、及时定位产品问题及缺陷</li></ol><ol type="i" id="99f51045-43e2-4bb6-971f-d5a37b2d9798" class="numbered-list" start="3"><li>存在zego即构SDK 获取设备基本信息（设备品牌及型号、设备厂商、设备所运行系统版本、名称、编辑版本信息、系统内核信息、CPU型号、设备内存及存储大小、屏幕亮度及分辨率、设备输入装置、设备架构、基带信息、字体HASH、HOSTNAME、辅助功能列表、模拟器信息）行为，用于区分设备、消息同步、创建房间、识别身份、及时定位产品问题及缺陷</li></ol><ol type="i" id="2af65fc5-5331-47c2-9f90-9b024f661b2e" class="numbered-list" start="4"><li>存在zego即构SDK 获取日志信息（网络连接类型及状态、WIFISSID、WIFIBSSID、IP地址、运营商信息、网络代理、云信通信服务运行日志）行为，用于及时定位产品问题、保证服务质量稳定、及时定位产品问题及缺陷</li></ol><ol type="i" id="775d1ff6-a812-4d7a-ac32-2ada3642bf9b" class="numbered-list" start="5"><li>存在zego即构SDK 获取应用信息（应用名、应用版本号）行为，用于多设备消息同步的功能、及时定位产品问题及缺陷</li></ol><ol type="i" id="e4b78a62-ca74-463e-b64f-de10801df37b" class="numbered-list" start="6"><li>存在zego即构SDK 获取联网方式行为，用于及时定位产品问题及缺陷</li></ol><ol type="i" id="aa5d3df2-33f5-4d23-9403-b9b7e1feb3c1" class="numbered-list" start="7"><li>存在zego即构SDK 获取音视频信息(音频采样率、音频编码格式、视频分辨率、视频编码格式)行为，用于实时语音、语音消息、视频功能</li></ol></li></ol><ol type="a" id="4e6cb160-5b64-42e9-8f92-14ef603b1083" class="numbered-list" start="3"><li>使用目的：实时音视频</li></ol><ol type="a" id="5d2f176e-2c54-4d8c-b155-2ff378dea4f2" class="numbered-list" start="4"><li>使用场景：提供实时高性能的音视频服务和通讯服务</li></ol><ol type="a" id="0f004089-f8eb-441a-b8a8-4833315109c4" class="numbered-list" start="5"><li>隐私链接：<a href="https://www.zego.im/privacy">https://www.zego.im/privacy</a></li></ol></li></ol><ol type="1" id="9c0c16e9-be90-4a18-a880-c36b6453abec" class="numbered-list" start="7"><li>网易云信一键登录 <ol type="a" id="87605d11-1f8a-47cb-9cb1-6510ab1f151d" class="numbered-list" start="1"><li>第三方公司名称：杭州网易质云科技有限公司</li></ol><ol type="a" id="b203a166-10ba-49f8-b376-e9689e5e6557" class="numbered-list" start="2"><li>涉及个人信息：收集个人信息的类型：设备信息(设备品牌、设备型号、操作系统版本、语言、屏幕尺寸、联网方式)、位置信息、网络信息、SDK认证相关请求结果、手机号码 设备信息：设备标识符（IMEI、IDFA、ANDROID ID、MAC、OAID等相关信息）、应用信息（应用崩溃信息、通知开关状态、软件列表等相关信息、应用名称、应用包名、应用版本）、设备参数及系统信息（设备类型、设备型号、操作系统及硬件相关信息） 网络信息：IP地址，WiFi信息，基站信息等相关信息、账号信息(手机号码、邮箱地址、昵称、头像)<ul id="cbe493f3-504d-4609-adbc-071b031e82d4" class="bulleted-list"><li style="list-style-type:disc">存在网易云信SDK获取手机号码行为，用于完成一键登录和号码认证，识别您终端用户的风险；</li></ul><ul id="1aca901f-52f0-41c6-941c-131923725efe" class="bulleted-list"><li style="list-style-type:disc">存在网易云信SDK获取设备标识符（包括IMEI、MAC、IMSI、IDFA、Android ID、GAID、OAID、UAID、ICCID）行为，用于生成脱敏的终端用户设备唯一标识，防范用户账号安全风险；</li></ul><ul id="c123c199-845a-41b5-a388-34760cce5b61" class="bulleted-list"><li style="list-style-type:disc">存在网易云信SDK获取网络信息（包括网络类型、运营商名称、基站信息、IP地址、WiFi信息、SSID、BSSID）行为，用于判断用户是否连接了移动网络，锁定使用服务手机号，获取当前上网卡的预取号以及token信息，从而实现在移动网络状态下的一键登录服务； 用于给相应号码发送短信验证码,实现短信验证功能；同时，用于分析当前设备的风险等级，可有效识别作弊行为，剔除作弊设备，识别恶意刷量、恶意程序、保护用户账号安全等。</li></ul><ul id="d59de1a5-a8e4-40cb-8d25-b9a1a8c52ed2" class="bulleted-list"><li style="list-style-type:disc">存在网易云信DK获取设备硬件信息（包括设备型号、设备屏幕分辨率、设备硬件制造商、设备产品名称）行为，用于确保所提供的产品和/或服务在不同设备上的兼容性，检测黑产恶意伪造设备；</li></ul><ul id="e62a3f07-c374-4dde-ad3e-ab56acb6dcbe" class="bulleted-list"><li style="list-style-type:disc">存在网易云信SDK获取操作系统信息（包括操作系统版本、系统名称、系统语言）行为，用于确保所提供的产品和/或服务在不同设备上的兼容性；</li></ul><ul id="5cb3746b-2b22-4fea-aa40-14dd5c988ff6" class="bulleted-list"><li style="list-style-type:disc">存在网易云信SDK获取软件列表信息（包括软件列表及软件运行列表信息）行为，用于识别用户应用环境及判断已安装的APP信息，帮助您识别异常软件与拦截机器程序的批量自动化操作，保护用户账号安全等。</li></ul></li></ol><ol type="a" id="2e7c7fab-9e82-4ecb-aaee-2630937b57a6" class="numbered-list" start="3"><li>使用目的：手机号一键登录</li></ol><ol type="a" id="c0993f33-5431-43e9-b9bd-d461b1f6b6ad" class="numbered-list" start="4"><li>使用场景：用于实现App一键登录，号码认证</li></ol><ol type="a" id="4e41dc4c-fb1d-4175-9f5d-b474fc52a1df" class="numbered-list" start="5"><li>隐私链接：<a href="https://netease.im/clauses?serviceType=3">https://netease.im/clauses?serviceType=3</a></li></ol></li></ol><ol type="1" id="0aa07c81-7dee-4040-9ba1-867e02c20719" class="numbered-list" start="8"><li>相芯美颜<ol type="a" id="ed133485-e07e-4843-962b-849fc7c0f899" class="numbered-list" start="1"><li>第三方公司名称：杭州相芯科技有限公司</li></ol><ol type="a" id="877a1fa3-2316-4105-861b-ae176d5d8e9e" class="numbered-list" start="2"><li>涉及个人信息：设备信息(设备品牌、设备型号、操作系统版本、语言、屏幕尺寸、联网方式)、应用信息(应用名称、应用包名、应用版本)、人脸图像、人脸特征、手机型号、唯一设备号、APP包名、IP地址、设备标示符(IMEI、IDFA、ANDROID ID、MAC、OAID)<ol type="i" id="9059c395-24e5-4f51-aeb4-cef5e6b0f2d5" class="numbered-list" start="1"><li>存在相芯美颜SDK获取设备信息(设备品牌、设备型号、操作系统版本、语言、屏幕尺寸、联网方式)行为</li></ol><ol type="i" id="8ec80a70-24b1-4d52-8fe5-6e18fee62693" class="numbered-list" start="2"><li>存在相芯美颜SDK获取应用信息(应用名称、应用包名、应用版本)行为</li></ol><ol type="i" id="1e65d886-c179-46b1-a70a-139fda42ff60" class="numbered-list" start="3"><li>存在相芯美颜SDK获取人脸图像行为</li></ol><ol type="i" id="a3e6a96b-a8d8-4bfb-bb3c-24bfc270d253" class="numbered-list" start="4"><li>存在相芯美颜SDK获取人脸特征行为</li></ol><ol type="i" id="c4afaf93-f823-49fe-9180-c6d0a5412d7e" class="numbered-list" start="5"><li>存在相芯美颜SDK获取手机型号行为</li></ol><ol type="i" id="c381999b-2a73-4dd0-b45d-e90a033cf0a8" class="numbered-list" start="6"><li>存在相芯美颜SDK获取唯一设备号行为</li></ol><ol type="i" id="eb7ac129-9a33-431b-8564-3f5fa439d6f0" class="numbered-list" start="7"><li>存在相芯美颜SDK获取APP包名行为</li></ol><ol type="i" id="e8652aeb-eab3-490f-b4a7-374e695b8098" class="numbered-list" start="8"><li>存在相芯美颜SDK获取IP地址行为</li></ol><ol type="i" id="c65bfc27-268e-4cb6-b2ba-e930a2a806f4" class="numbered-list" start="9"><li>存在相芯美颜SDK获取设备标示符(IMEI、IDFA、ANDROID ID、MAC、OAID)行为</li></ol></li></ol><ol type="a" id="50e63c97-9775-4591-9753-f25b3cd5efc2" class="numbered-list" start="3"><li>使用目的：视频通话美颜</li></ol><ol type="a" id="42fc8ff7-ea28-4acc-b5ef-be83109c6cd2" class="numbered-list" start="4"><li>使用场景：用于用户视频通话美颜</li></ol><ol type="a" id="dc51e3f8-e449-4900-9711-0f6e1bd5c3e2" class="numbered-list" start="5"><li>隐私链接：<a href="https://www.faceunity.com/policy.html">https://www.faceunity.com/policy.html</a></li></ol></li></ol><ol type="1" id="fd9bed34-838f-49bc-b5af-d0ac99119b72" class="numbered-list" start="9"><li>热云数据 TrackingIO SDK<ol type="a" id="f9f98f2b-433b-4f8a-af2b-643b76afc133" class="numbered-list" start="1"><li>第三方公司名称：北京热云科技有限公司</li></ol><ol type="a" id="8b16bc15-d91f-4af1-aeba-ad282b0d0654" class="numbered-list" start="2"><li>涉及个人信息：iOS广告标识符（IDFA和IDFV）、安卓广告主标识符（Android ID）、网卡地址（MAC）、国际移动设备识别码（IMEI）、移动设备识别码（MEID）、匿名设备标识码（OAID）、时区、APP包名、APP版本、系统版本、监测事件发生时间、运营商信息、设备型号、设备系统信息、设备硬件信息、设备运行环境信息、设备制造厂商、网络连接类型、设备操作系统版本、iOS设备是否已开启限制广告追踪、iOS设备是否已越狱、设备传感器信息*、IP地址*、虚拟交易金额、互联网广告标识（CAID）、应用信息(应用名称、应用包名、应用版本)、位置信息(GPS位置、IP地址)用于优化广告投放、反作弊识别<ol type="i" id="69924f46-2442-44a4-a739-ce18f16d3477" class="numbered-list" start="1"><li>存在热云数据 TrackingIO SDK获取iOS广告标识符（IDFA和IDFV）、热云数据SDK获取安卓广告主标识符（Android ID）、热云数据SDK获取网卡地址（MAC）、热云数据SDK获取国际移动设备识别码（IMEI）、热云数据SDK获取移动设备识别码（MEID）、热云数据SDK获取匿名设备标识码（OAID）设备识别码行为，用于跨平台识别同一设备，实现广告监测，设备识别码将被去标识化；</li></ol><ol type="i" id="1fe399cf-8fd5-49cc-a369-c85c23ed8841" class="numbered-list" start="2"><li>存在热云数据 TrackingIO SDK获取IP地址行为用于反作弊识别功能所必需的信息，拒绝提供将导致广告作弊识别无法使用，但不影响其他功能的正常使用；</li></ol></li></ol><ol type="a" id="979a8afa-c2fb-48e0-a281-705694c8cb68" class="numbered-list" start="3"><li>热云数据 TrackingIO SDK共享个人信息类型：安卓广告主标识符（Android ID）、网卡地址（MAC）、IP地址、国际移动设备识别码（IMEI）、移动设备识别码（MEID）、匿名设备标识码（OAID）、阿里ID、时区、APP包名、APP版本、系统构建版本号、监测事件发生时间、设备型号、设备系统信息、设备硬件信息、运行环境信息、终端制造厂商、终端设备做系统版本</li></ol><ol type="a" id="f1ee93b3-6c2b-458a-8dde-8fca1ee43fcf" class="numbered-list" start="4"><li>热云数据 TrackingIO SDK使用方式：广告反作弊识别功能</li></ol><ol type="a" id="b2fc733a-09f3-4fca-a8e9-157a70c8d10f" class="numbered-list" start="5"><li>隐私链接：<a href="https://www.trackingio.com/#/policy">https://www.trackingio.com/#/policy</a></li></ol></li></ol><ol type="1" id="c8fe6c64-79fd-40d8-aa36-57a9eb866e72" class="numbered-list" start="10"><li>网易云信短信 <ol type="a" id="cd638272-3d43-4b2b-9a41-33b1b3958996" class="numbered-list" start="1"><li>第三方公司名称：杭州网易质云科技有限公司</li></ol><ol type="a" id="47175985-d950-4835-9134-0fa5575411ec" class="numbered-list" start="2"><li>涉及个人信息：收集个人信息的类型：设备信息、位置信息、网络信息、SDK认证相关请求结果、手机号码 设备信息：设备标识符（IMEI、IDFA、ANDROID ID、MAC、OAID等相关信息）、应用信息（应用崩溃信息、通知开关状态、软件列表、应用名称、应用包名、应用版本等相关信息）、设备参数及系统信息（设备类型、设备型号、操作系统及硬件相关信息） 网络信息：IP地址，WiFi信息，基站信息等相关信息<ul id="cca0245c-8ee7-4b74-a8de-382f3e30086d" class="bulleted-list"><li style="list-style-type:disc">存在网易云信SDK获取手机号码行为，用于完成一键登录和号码认证，识别您终端用户的风险；</li></ul><ul id="36c4e51b-bcf4-40f4-9ce8-bf331d9c8d18" class="bulleted-list"><li style="list-style-type:disc">存在网易云信SDK获取设备标识符（包括IMEI、MAC、IMSI、IDFA、Android ID、GAID、OAID、UAID、ICCID）行为，用于生成脱敏的终端用户设备唯一标识，防范用户账号安全风险；</li></ul><ul id="bc9cda4b-cbef-456d-93ea-a39cee70520f" class="bulleted-list"><li style="list-style-type:disc">存在网易云信SDK获取网络信息（包括网络类型、运营商名称、基站信息、IP地址、WiFi信息、SSID、BSSID）行为，用于判断用户是否连接了移动网络，锁定使用服务手机号，获取当前上网卡的预取号以及token信息，从而实现在移动网络状态下的一键登录服务； 用于给相应号码发送短信验证码,实现短信验证功能；同时，用于分析当前设备的风险等级，可有效识别作弊行为，剔除作弊设备，识别恶意刷量、恶意程序、保护用户账号安全等。</li></ul><ul id="2a7e8eb0-45f6-449a-884a-798c1a78d867" class="bulleted-list"><li style="list-style-type:disc">存在网易云信SDK获取设备硬件信息（包括设备型号、设备屏幕分辨率、设备硬件制造商、设备产品名称）行为，用于确保所提供的产品和/或服务在不同设备上的兼容性，检测黑产恶意伪造设备；</li></ul><ul id="2637858e-ec96-4af0-911d-cc3370e89ceb" class="bulleted-list"><li style="list-style-type:disc">存在网易云信SDK获取操作系统信息（包括操作系统版本、系统名称、系统语言）行为，用于确保所提供的产品和/或服务在不同设备上的兼容性；</li></ul><ul id="13a8caa3-91ac-4eb1-9294-f9e48bb9de9f" class="bulleted-list"><li style="list-style-type:disc">存在网易云信SDK获取软件列表信息（包括软件列表及软件运行列表信息）行为，用于识别用户应用环境及判断已安装的APP信息，帮助您识别异常软件与拦截机器程序的批量自动化操作，保护用户账号安全等。</li></ul></li></ol><ol type="a" id="87c7768d-9ae1-47dd-9484-dabb70dc987c" class="numbered-list" start="3"><li>使用目的：短信验证</li></ol><ol type="a" id="ec57f2e8-6f7e-4c84-964e-6c2cf38a3853" class="numbered-list" start="4"><li>使用场景：用于实现App获取验证码的功能</li></ol><ol type="a" id="2fff7efb-e83f-4ae6-95ff-608e2abca167" class="numbered-list" start="5"><li>隐私链接：<a href="https://netease.im/clauses?serviceType=3">https://netease.im/clauses?serviceType=3</a></li></ol></li></ol><ol type="1" id="07706ddb-cdb1-4079-94b5-f4332735c6fa" class="numbered-list" start="11"><li>电信一键登录SDK <ol type="a" id="d01d733f-2d6b-4d7c-bf32-05fe6253ad88" class="numbered-list" start="1"><li>第三方公司名称：中国电信</li></ol><ol type="a" id="bb6bfcc0-07ac-4718-85e9-476050558768" class="numbered-list" start="2"><li>涉及个人信息：设备信息(设备品牌、设备型号、操作系统版本、语言、屏幕尺寸、联网方式)、手机号码 设备信息：设备标识符（IMSI、AndroidID)、手机号码、应用信息（应用崩溃信息、通知开关状态、软件列表、应用名称、应用包名、应用版本等相关信息）、账号信息(手机号码、邮箱地址、昵称、头像)<ul id="6042b542-b3ec-4d6a-900a-14dd586af5cb" class="bulleted-list"><li style="list-style-type:disc">存在电信一键登录SDK获取手机号码行为，用于完成一键登录和号码认证，识别您终端用户的风险；</li></ul><ul id="3a63cb1a-5d99-4315-b723-362396b9c435" class="bulleted-list"><li style="list-style-type:disc">存在电信一键登录SDK获取设备标识符（包括IMEI、MAC、IMSI、IDFA、Android ID、GAID、OAID、UAID、ICCID）行为，用于生成脱敏的终端用户设备唯一标识，防范用户账号安全风险；</li></ul><ul id="b3ebb931-cc7e-46c7-97e0-8b033e4db552" class="bulleted-list"><li style="list-style-type:disc">存在电信一键登录SDK获取网络信息（包括网络类型、运营商名称、基站信息、IP地址、WiFi信息、SSID、BSSID）行为，用于判断用户是否连接了移动网络，锁定使用服务手机号，获取当前上网卡的预取号以及token信息，从而实现在移动网络状态下的一键登录服务； 用于给相应号码发送短信验证码,实现短信验证功能；同时，用于分析当前设备的风险等级，可有效识别作弊行为，剔除作弊设备，识别恶意刷量、恶意程序、保护用户账号安全等。</li></ul><ul id="fa8ced34-a3bf-4cc6-9358-ecf88f583f57" class="bulleted-list"><li style="list-style-type:disc">存在电信一键登录SDK获取设备硬件信息（包括设备型号、设备屏幕分辨率、设备硬件制造商、设备产品名称）行为，用于确保所提供的产品和/或服务在不同设备上的兼容性，检测黑产恶意伪造设备；</li></ul><ul id="2b933cc4-e052-42fc-beee-98a57744983d" class="bulleted-list"><li style="list-style-type:disc">存在电信一键登录SDK获取操作系统信息（包括操作系统版本、系统名称、系统语言）行为，用于确保所提供的产品和/或服务在不同设备上的兼容性；</li></ul><ul id="7fa7a47b-8d20-447b-b703-1c79e6a487ad" class="bulleted-list"><li style="list-style-type:disc">存在电信一键登录SDK获取软件列表信息（包括软件列表及软件运行列表信息）行为，用于识别用户应用环境及判断已安装的APP信息，帮助您识别异常软件与拦截机器程序的批量自动化操作，保护用户账号安全等。</li></ul></li></ol><ol type="a" id="29e36116-0292-42c5-bd3a-d0977fd58d2d" class="numbered-list" start="3"><li>使用目的：一键登陆</li></ol><ol type="a" id="022ec032-2bf1-4d83-af90-d1711f7d7792" class="numbered-list" start="4"><li>使用场景：用于实现App一键登录</li></ol><ol type="a" id="2acc5c4f-1157-439d-b5fb-d787828b9330" class="numbered-list" start="5"><li>隐私链接：<a href="https://e.189.cn/_agreements.html">https://e.189.cn/_agreements.html</a></li></ol></li></ol><ol type="1" id="45a358a0-9c7d-4888-98b3-dc888660b161" class="numbered-list" start="12"><li>移动一键登录SDK <ol type="a" id="97b7111f-3e5f-4915-ae01-794bbf9eea7e" class="numbered-list" start="1"><li>第三方公司名称：中国移动</li></ol><ol type="a" id="728ae113-e0b2-4bf5-a9e6-fcd7c348141e" class="numbered-list" start="2"><li>涉及个人信息：设备信息(设备品牌、设备型号、操作系统版本、语言、屏幕尺寸、联网方式)、应用信息（应用崩溃信息、通知开关状态、软件列表、应用名称、应用包名、应用版本等相关信息）、手机号码、设备信息：设备标识符（IMSI、AndroidID)<ol type="i" id="88eaf2dd-3544-4360-837d-0e340926481c" class="numbered-list" start="1"><li>存在移动一键登录SDK 获取手机号码行为，用于完成一键登录和号码认证，识别您终端用户的风险；</li></ol><ul id="643618f0-da23-41ae-84cd-de8496c3e73a" class="bulleted-list"><li style="list-style-type:disc">存在移动一键登录SDK 获取设备标识符（包括IMEI、MAC、IMSI、IDFA、Android ID、GAID、OAID、UAID、ICCID）行为，用于生成脱敏的终端用户设备唯一标识，防范用户账号安全风险；</li></ul><ul id="d835f1b2-9524-41e6-b8b5-b94e11ed521f" class="bulleted-list"><li style="list-style-type:disc">存在移动一键登录SDK 获取网络信息（包括网络类型、运营商名称、基站信息、IP地址、WiFi信息、SSID、BSSID）行为，用于判断用户是否连接了移动网络，锁定使用服务手机号，获取当前上网卡的预取号以及token信息，从而实现在移动网络状态下的一键登录服务； 用于给相应号码发送短信验证码,实现短信验证功能；同时，用于分析当前设备的风险等级，可有效识别作弊行为，剔除作弊设备，识别恶意刷量、恶意程序、保护用户账号安全等。</li></ul><ul id="97ee4713-5c2e-4809-af94-f5925f447ca0" class="bulleted-list"><li style="list-style-type:disc">存在移动一键登录SDK 获取设备硬件信息（包括设备型号、设备屏幕分辨率、设备硬件制造商、设备产品名称）行为，用于确保所提供的产品和/或服务在不同设备上的兼容性，检测黑产恶意伪造设备；</li></ul><ul id="e1340be3-bc89-4787-8feb-dc7769636587" class="bulleted-list"><li style="list-style-type:disc">存在移动一键登录SDK 获取操作系统信息（包括操作系统版本、系统名称、系统语言）行为，用于确保所提供的产品和/或服务在不同设备上的兼容性；</li></ul><ul id="539e026d-e75d-48a2-a45a-551ed6bed992" class="bulleted-list"><li style="list-style-type:disc">存在移动一键登录SDK 获取软件列表信息（包括软件列表及软件运行列表信息）行为，用于识别用户应用环境及判断已安装的APP信息，帮助您识别异常软件与拦截机器程序的批量自动化操作，保护用户账号安全等。</li></ul></li></ol><ol type="a" id="ed034763-f612-48f1-bcea-3e3d3135c4b5" class="numbered-list" start="3"><li>使用目的：一键登录</li></ol><ol type="a" id="4a9f57c0-c974-4198-98d2-799ebd1415b0" class="numbered-list" start="4"><li>使用场景：用于实现App一键登录</li></ol><ol type="a" id="c62c893f-dcee-4223-980b-cdcee0e545ae" class="numbered-list" start="5"><li>隐私链接：<a href="https://wap.cmpassport.com/resources/html/contract.html">https://wap.cmpassport.com/resources/html/contract.html</a></li></ol></li></ol><ol type="1" id="f18c4673-6dcc-45f8-ad69-48c627491ee6" class="numbered-list" start="13"><li>小米推送SDK <ol type="a" id="ecfe8016-2a6f-4eaf-9a05-a56fe31875b9" class="numbered-list" start="1"><li>第三方公司名称：小米科技有限责任公司</li></ol><ol type="a" id="a52c9e82-20a4-44af-a916-ccee92d2f5da" class="numbered-list" start="2"><li>涉及个人信息：设备信息(设备品牌、设备型号、操作系统版本、语言、屏幕尺寸、联网方式)、应用信息（应用崩溃信息、通知开关状态、软件列表、应用名称、应用包名、应用版本等相关信息）、账号信息(用户ID、设备ID、推送ID)、OAID、Android ID、应用信息(应用包名、版本号、运行状态)、设备序列号、设备厂商、设备型号、设备内存、操作系统版本、小米推送SDK版本、设备归属地(国家或地区)、SIM卡运营商名称、当前网络类型、通知栏设置信息、应用运行列表、SSID、BSSID、WIFI状态、MAC地址、IP地址、IMEI<ol type="i" id="c022a974-52ef-4799-aab9-35282e01d3f5" class="numbered-list" start="1"><li>存在小米推送SDK 获取个人信息行为，用于实现小米推送基本的消息推送服务</li></ol><ol type="i" id="74b892de-bb6f-43fb-9561-83aa116036f9" class="numbered-list" start="2"><li>存在小米推送SDK 获取设备标识OAID、小米推送SDK 获取加密的Android ID、小米推送SDK 获取应用信息(如应用包名、版本号和运行状态)、小米推送SDK 获取IDFV（当收集不到IDFV时则不收集）行为，用于将第三方应用提供的相关的信息及时推送到您的设备终端</li></ol><ol type="i" id="37a32e0c-7d22-4eba-9d5e-af5978a1ce05" class="numbered-list" start="3"><li>存在小米推送SDK 获取设备厂商、小米推送SDK 获取设备型号、小米推送SDK 获取设备内存、小米推送SDK 获取操作系统版本、小米推送SDK 获取小米推送SDK版本、小米推送SDK 获取设备归属地（国家或地区）、小米推送SDK 获取SIM卡运营商名称、小米推送SDK 获取当前网络类型、小米推送SDK 获取WiFi状态。小米推送SDK 获取设备相关信息如设备型号、小米推送SDK 获取操作系统版本行为，用于为针对您的设备和系统等向您推送和展示消息。</li></ol><ol type="i" id="33dfc085-1bb0-4f9d-bce4-b07239a21fd4" class="numbered-list" start="4"><li>存在小米推送SDK 获取通知栏设置信息，包括是否屏蔽通知栏、是否设置锁屏弹出消息行为，用于根据您的设置提供推送服务</li></ol></li></ol><ol type="a" id="0270ac69-889d-4768-9714-f41ea482b423" class="numbered-list" start="3"><li>使用目的：推送消息</li></ol><ol type="a" id="c1b04c1b-6838-47fc-81b4-cf98a12d7810" class="numbered-list" start="4"><li>使用场景：用于向小米手机用户发送推送肖息</li></ol><ol type="a" id="dfc749e8-74aa-436b-b0cb-c755127bae03" class="numbered-list" start="5"><li>隐私链接：<a href="https://dev.mi.com/distribute/doc/details?pId=1534">https://dev.mi.com/console/doc/detail?pld=1822</a></li></ol></li></ol><ol type="1" id="390a60b3-b5e0-4753-b8b5-2277d1d43b2a" class="numbered-list" start="14"><li>华为推送SDK <ol type="a" id="b5384169-a62c-4ad5-90d5-6431c8779631" class="numbered-list" start="1"><li>第三方公司名称：华为技术有限公司</li></ol><ol type="a" id="83f0f01f-a96e-4d8b-8e1c-f2af549dbb55" class="numbered-list" start="2"><li>涉及个人信息：设备信息(设备品牌、设备型号、操作系统版本、语言、屏幕尺寸、联网方式)、应用信息（应用崩溃信息、通知开关状态、软件列表、应用名称、应用包名、应用版本等相关信息）、账号信息(用户ID、设备ID、推送ID)、BSSID、无线网络列表、网络类型、网络状态、设备型号、设备序列号、SSID、AAID、Android id、应用ID、应用包名、IP地址、SIM状态、应用运行列表、IMEI<ol type="i" id="4a640dcf-60ec-447b-9081-d989744d3e52" class="numbered-list" start="1"><li>存在华为推送SDK获取设备及应用信息(如设备名称、设备识别符、设备激活时间、硬件型号、操作系统版本、应用程序版本、软件识别码、设备及应用设置（如地区/语言/时区/字体）行为</li></ol><ol type="i" id="25ed37a2-0176-47d2-ac6d-2212a7a29ec6" class="numbered-list" start="2"><li>存在华为推送SDK获取移动网络信息(如公共陆地移动网络提供商 ID（PLMN）、地理位置（设备定位所在区域信号发射塔识别信息）、Internet 协议（IP）地址行为</li></ol><ol type="i" id="747c54da-973b-42a4-a961-a6b889df2fa2" class="numbered-list" start="3"><li>存在华为推送SDK获取日志信息行为</li></ol><ol type="i" id="48b3a19a-d698-4cad-95e3-aca95953c6ac" class="numbered-list" start="4"><li>存在华为推送SDK获取位置信息行为</li></ol><ol type="i" id="c2f318aa-39ca-4926-89ac-4a0a1dc3fc94" class="numbered-list" start="5"><li>存在华为推送SDK获取存储在华为服务器的内容行为</li></ol><ol type="i" id="d7a5f7d6-b714-4cba-a0fe-f1e8ffaf07a1" class="numbered-list" start="6"><li>用途:<ol type="1" id="8ae7ec1b-3795-4672-a0f6-82d507a82661" class="numbered-list" start="1"><li>注册和激活您购买的华为个人及家用产品；</li></ol><ol type="1" id="cd4df8e0-922b-49e5-a618-bddf3b0d6f13" class="numbered-list" start="2"><li>注册华为帐号，以便您享用更丰富多彩的功能；</li></ol><ol type="1" id="fb669af4-7f83-4c43-a353-24489fa5f654" class="numbered-list" start="3"><li>交付、激活或验证您所请求的产品与服务，或应您的要求对前述产品与服务进行变更、提供技术支持与售后服务；</li></ol><ol type="1" id="eb1503ba-912e-46f5-a09a-4c84fad9a32e" class="numbered-list" start="4"><li>向您发送操作系统或应用程序更新和安装的通知；</li></ol><ol type="1" id="4f04b06d-ac01-440f-9c2d-7aaf4082347e" class="numbered-list" start="5"><li>为您提供个性化用户体验和个性化内容；</li></ol><ol type="1" id="5ad3727a-d893-424b-bccc-56a7ed24ee7b" class="numbered-list" start="6"><li>在您明确同意或应您主动要求，与您联系、向您发送有关您可能感兴趣的产品与服务的信息、邀请您参与华为促销活动和市场调查、或向您发送营销信息。如果您不想接收此类信息，则可以随时退订；</li></ol><ol type="1" id="eede4600-309d-41d1-b734-4a14bd36961b" class="numbered-list" start="7"><li>开展内部审计、数据分析和研究，分析业务运营效率并衡量市场份额，改善华为的产品与服务；</li></ol><ol type="1" id="84a789dc-eb4c-4454-bd94-4c67e89fb1cf" class="numbered-list" start="8"><li>在您选择向我们发送错误详情的情况下排查错误；</li></ol><ol type="1" id="a6b19d6c-f4d7-472f-a21e-2627973d60df" class="numbered-list" start="9"><li>同步和存储您上传或下载的数据以及执行上传和下载所需的数据；</li></ol><ol type="1" id="83b765f8-7aed-4a65-9192-94607aa6b542" class="numbered-list" start="10"><li>改善我们的防损和反欺诈计划；</li></ol><ol type="1" id="995018ee-0c13-4ff0-b168-21490cb845df" class="numbered-list" start="11"><li>其他征得您同意的目的。</li></ol></li></ol></li></ol><ol type="a" id="729a42cf-3075-41b6-b9d7-35ec6dd4fdc6" class="numbered-list" start="3"><li>使用目的：推送消息</li></ol><ol type="a" id="35d41ecc-511c-41e9-8f1b-b6cedfaaa472" class="numbered-list" start="4"><li>使用场景：用于向华为手机用户发送推送肖息</li></ol><ol type="a" id="1c6f9fc7-e581-4dc0-80bd-956d76511ee7" class="numbered-list" start="5"><li>隐私链接：<a href="https://consumer.huawei.com/minisite/legal/privacy/statement.htm?code=CN&amp;language=zh-CN">https://consumer.huawei.com/minisite/legal/privacy/statement.htm?code=CN&amp;language=zh-CN</a></li></ol></li></ol><ol type="1" id="291130aa-40ef-4cd5-b9a2-345680b187c6" class="numbered-list" start="15"><li>OPPO推送SDK <ol type="a" id="c7be949d-7feb-4c85-8ad1-3fc076786a79" class="numbered-list" start="1"><li>第三方公司名称：OPPO广东移动通信有限公司</li></ol><ol type="a" id="3bb9d9b7-e94f-4291-b41a-4438a0c30828" class="numbered-list" start="2"><li>涉及个人信息：设备信息(IMEI，Serial Number，IMSI，User ID，Android ID，Google Advertising ID，IDFA,手机Region设置，设备型号，手机电量，手机操作系统版本及语言)、使用推送服务的应用信息(APP包名及版本号，运行状态)、推送sdk版本号、网络相关信息(IP/域名连接结果，当前网络类型)、消息发送结果、通知栏状态、锁屏状态、应用信息（应用崩溃信息、通知开关状态、软件列表、应用名称、应用包名、应用版本等相关信息）、应用信息（应用崩溃信息、通知开关状态、软件列表、应用名称、应用包名、应用版本等相关信息）、账号信息(用户ID、设备ID、推送ID)<ol type="i" id="906b5cbd-4ee7-4878-aed3-c0aa775896f6" class="numbered-list" start="1"><li>存在OPPO推送SDK获取设备相关信息（如IMEI或OAID，Serial Number，IMSI，User ID，OPPO推送SDK获取Android ID，OPPO推送SDK获取Google Advertising ID, OPPO推送SDK获取手机Region设置，OPPO推送SDK获取设备型号，OPPO推送SDK获取手机电量，OPPO推送SDK获取手机操作系统版本及语言）、OPPO推送SDK获取使用推送服务的应用信息（如APP包名及版本号，运行状态）、OPPO推送SDK获取推送SDK版本号、OPPO推送SDK获取网络相关信息（如IP或域名连接结果，当前网络类型）、OPPO推送SDK获取消息发送结果、OPPO推送SDK获取通知栏状态（如通知栏权限、用户点击行为），OPPO推送SDK获取锁屏状态（如是否锁屏，是否允许锁屏通知）行为，用于提供推送服务，发送关于软件更新或新品发布等通知</li></ol></li></ol><ol type="a" id="8d5e7ea1-82b6-41e3-a391-7d2cdc174b18" class="numbered-list" start="3"><li>使用目的：推送消息</li></ol><ol type="a" id="c22ea973-0e47-4c88-aefa-ae51d39dc56f" class="numbered-list" start="4"><li>使用场景：用于向OPPO手机用户发送推送肖息</li></ol><ol type="a" id="c9620075-3b79-47cd-b1f3-f45eee1de667" class="numbered-list" start="5"><li>隐私链接：<a href="https://open.oppomobile.com/new/developmentDoc/info?id=10288">https://oppomobile.com/wiki/doc#id=10288</a></li></ol></li></ol><ol type="1" id="bce6d134-748f-4abb-aaea-4881bddc1e15" class="numbered-list" start="16"><li>VIVO推送SDK <ol type="a" id="21802bc2-d6e6-4d67-9160-0533c0486b6f" class="numbered-list" start="1"><li>第三方公司名称：维沃移动通信有限公司</li></ol><ol type="a" id="d89f633d-44a8-436e-ae01-bbdee9a19289" class="numbered-list" start="2"><li>涉及个人信息：设备信息(设备品牌、设备型号、操作系统版本、语言、屏幕尺寸、联网方式)、应用信息（应用崩溃信息、通知开关状态、软件列表、应用名称、应用包名、应用版本等相关信息）、账号信息(用户ID、设备ID、推送ID)、BBSID、无线网络列表、网络类型、设备型号、硬件序列号、SSID、位置信息、应用运行列表、设备标示符(IMEI、Android ID、IDFA等)<ol type="i" id="213214e5-4ec6-4c27-864a-3e3d5faa41de" class="numbered-list" start="1"><li>存在VIVO推送SDK获取设备标识信息（如IMEI、EmmCID、UFSID、ANDROIDID、GUID、GAID、OPENID、VAID、OAID、RegID、加密的Android ID）、VIVO推送SDK获取使用推送服务的应用软件信息（如应用包名、版本号、APPID、安装、卸载、恢复出厂设置、运行状态）、VIVO推送SDK获取设备制造商、VIVO推送SDK获取网络相关信息（如IP地址、网络类型）、VIVO推送SDK获取国家码、VIVO推送SDK获取设备类型行为，用于将应用开发者提供的相关信息推送到您的设备终端</li></ol><ol type="i" id="e1f4e421-a23d-44ae-8e07-67c0687a1bca" class="numbered-list" start="2"><li>存在VIVO推送SDK获取消息创建、VIVO推送SDK获取送达和点击的时间戳，并暂存从第三方应用处获得并推送给用户的消息内容行为用于提供推送服务</li></ol><ol type="i" id="47b75bac-acdc-40e1-ab15-3afcd89b0f50" class="numbered-list" start="3"><li>存在VIVO推送SDK获取推送SDK版本号、VIVO推送SDK获取设备型号、VIVO推送SDK获取操作系统版本、VIVO推送SDK获取当前网络类型、VIVO推送SDK获取消息发送结果、VIVO推送SDK获取通知栏状态（如通知栏权限、用户点击行为）、VIVO推送SDK获取锁屏状态（如是否锁屏，是否允许锁屏通知）行为，用于针对用户设备和系统等向您推送和展示消息</li></ol><ol type="i" id="49e086ca-fbf9-46ed-91a8-c3ef8e2bc18f" class="numbered-list" start="4"><li>存在VIVO推送SDK获取IP地址行为，用于设备的网络优化用于确保推送服务连接的稳定性，以避免推送不及时</li></ol><ol type="i" id="ba696926-0817-4321-9219-9c638d6d3ca6" class="numbered-list" start="5"><li>存在VIVO推送SDK获取手机系统状态信息、VIVO推送SDK获取应用行为数据行为，用于，提供场景化消息推送服务</li></ol><ol type="i" id="2e425de2-58a0-49bb-87ec-a0803a864d16" class="numbered-list" start="6"><li>存在VIVO推送SDK获取推送信息内容、VIVO推送SDK获取通知栏状态（如通知栏权限、用户点击行为）行为以形成用户画像，用于个性化的服务</li></ol></li></ol><ol type="a" id="713b6eb4-9444-4bc9-8462-ca4d9629dd41" class="numbered-list" start="3"><li>使用目的：推送消息</li></ol><ol type="a" id="cde28f6e-5dcd-44c0-8d78-4accb8724408" class="numbered-list" start="4"><li>使用场景：用于向VIVO手机用户发送推送肖息</li></ol><ol type="a" id="8e4bf5ff-33ff-4ede-9e49-a3e70d04e38b" class="numbered-list" start="5"><li>隐私链接：<a href="https://dev.vivo.com.cn/documentCenter/doc/652">https://dev.vivo.com.cn/documentCenter/doc/366</a></li></ol></li></ol><ol type="1" id="cbbfed3f-38f2-4737-9dc9-5de521fcacf8" class="numbered-list" start="17"><li>极光一键登录 <ol type="a" id="899fb7e9-ce62-47aa-8458-1b846259e35c" class="numbered-list" start="1"><li>第三方公司名称：深圳市和讯华谷信息技术有限公司</li></ol><ol type="a" id="e584f9a7-462c-4ba7-a9b7-8a4f96627119" class="numbered-list" start="2"><li>涉及个人信息：收集个人信息的类型：设备信息(设备品牌、设备型号、操作系统版本、语言、屏幕尺寸、联网方式)、位置信息、网络信息、SDK认证相关请求结果、手机号码 设备信息：设备标识符（IMEI、IDFA、ANDROID ID、MAC、OAID等相关信息）、应用信息（应用崩溃信息、通知开关状态、软件列表等相关信息、应用名称、应用包名、应用版本）、设备参数及系统信息（设备类型、设备型号、操作系统及硬件相关信息） 网络信息：IP地址，WiFi信息，基站信息等相关信息、账号信息(手机号码、邮箱地址、昵称、头像)<ul id="1f597aa9-470c-49be-a162-5dfc48db6563" class="bulleted-list"><li style="list-style-type:disc">存在极光SDK获取手机号码行为，用于完成一键登录和号码认证，识别您终端用户的风险；</li></ul><ul id="2e26861c-3483-44ac-a125-e49330782a86" class="bulleted-list"><li style="list-style-type:disc">存在极光SDK获取设备标识符（包括IMEI、MAC、IMSI、IDFA、Android ID、GAID、OAID、UAID、ICCID）行为，用于生成脱敏的终端用户设备唯一标识，防范用户账号安全风险；</li></ul><ul id="f693dd20-f050-4688-b632-ad9698e88cc6" class="bulleted-list"><li style="list-style-type:disc">存在极光SDK获取网络信息（包括网络类型、运营商名称、基站信息、IP地址、WiFi信息、SSID、BSSID）行为，用于判断用户是否连接了移动网络，锁定使用服务手机号，获取当前上网卡的预取号以及token信息，从而实现在移动网络状态下的一键登录服务； 用于给相应号码发送短信验证码,实现短信验证功能；同时，用于分析当前设备的风险等级，可有效识别作弊行为，剔除作弊设备，识别恶意刷量、恶意程序、保护用户账号安全等。</li></ul><ul id="96174a93-421e-4c17-836e-b86d7a2dacbf" class="bulleted-list"><li style="list-style-type:disc">存在极光DK获取设备硬件信息（包括设备型号、设备屏幕分辨率、设备硬件制造商、设备产品名称）行为，用于确保所提供的产品和/或服务在不同设备上的兼容性，检测黑产恶意伪造设备；</li></ul><ul id="1c2e9f72-e048-476a-984a-8bc82a1ae0db" class="bulleted-list"><li style="list-style-type:disc">存在极光SDK获取操作系统信息（包括操作系统版本、系统名称、系统语言）行为，用于确保所提供的产品和/或服务在不同设备上的兼容性；</li></ul><ul id="0ae40973-b113-4b17-8a89-ef7b6163dc9c" class="bulleted-list"><li style="list-style-type:disc">存在极光SDK获取软件列表信息（包括软件列表及软件运行列表信息）行为，用于识别用户应用环境及判断已安装的APP信息，帮助您识别异常软件与拦截机器程序的批量自动化操作，保护用户账号安全等。</li></ul></li></ol><ol type="a" id="5b233bf7-d20b-40d7-a2bd-d3d1b0352dab" class="numbered-list" start="3"><li>使用目的：手机号一键登录</li></ol><ol type="a" id="f022902b-e940-4a35-bcd6-a61b6958c143" class="numbered-list" start="4"><li>使用场景：用于实现App一键登录，号码认证</li></ol><ol type="a" id="5fcc6297-0c6f-49f1-ac24-37078940fc44" class="numbered-list" start="5"><li>隐私链接：<a href="https://www.jiguang.cn/license/privacy">https://www.jiguang.cn/license/privacy</a></li></ol></li></ol><h1 id="b2c5a3aa-545f-444c-96ba-eff6d6401b22" class="">三、我们如何共享、转让、公开披露您的个人信息</h1><h2 id="f0d5574d-c582-413e-bff3-000af9abf2b4" class="">共享</h2><p id="f8423ba6-3c3d-4df3-8c88-c9c82692dbe4" class="">我们不会与产品服务相关提供者以外的公司、组织和个人共享您的个人信息。我们可能会与合作伙伴共享您的某些个人信息，以提供更好的客户服务和用户体验。我们仅会出于合法、正当、必要、特定、明确的目的共享您的个人信息，并且只会共享提供服务所必要的个人信息，具体情况如下：</p><ol type="1" id="c2a229c2-e8fa-42cb-853f-ada29681536f" class="numbered-list" start="1"><li>在获取明确同意的情况下共享：在获得您的明确同意后，我们会与其他方共享您的个人信息。</li></ol><ol type="1" id="da09378a-b843-4022-8bfb-796cb41af411" class="numbered-list" start="2"><li>在法定情形下的共享：我们可能会根据法律法规规定、诉讼争议解决需要，或按行政、司法机关依法提出的要求，对外共享您的个人信息。</li></ol><ol type="1" id="53d27fc6-03e7-4281-b6ff-ac4449ce0cb7" class="numbered-list" start="3"><li>为实现产品功能或服务的共享：<ol type="a" id="71f74bf0-39a9-43d2-aece-7528b67ace37" class="numbered-list" start="1"><li>您的个人信息可能会与我们的关联公司共享。我们只会共享必要的个人信息，且受本政策中所声明目的的约束。关联公司如要改变个人信息的处理目的，将再次征求您的授权同意。</li></ol><ol type="a" id="901cbbd9-ec42-4160-b23b-9c1b266f52f2" class="numbered-list" start="2"><li>地理位置服务：当您使用地理位置相关服务时，我们会通过SDK或相关技术将GPS信息与位置服务提供商进行共享以便可以向您返回位置结果。GPS信息是个人敏感信息，拒绝提供，仅会影响地理位置服务功能，但不影响其他功能的正常使用。</li></ol><ol type="a" id="fa279976-c1aa-4017-a7d9-52e3f3e31314" class="numbered-list" start="3"><li>余额功能：余额功能中的相关服务由我们的关联方及合作伙伴提供，当您使用钱包相关功能时我们的关联方和合作伙伴会根据功能或服务必需而收集必要限度内的信息。</li></ol><ol type="a" id="add504a1-01b0-4c49-8965-2425185608cb" class="numbered-list" start="4"><li>支付功能：支付功能由与我们合作的第三方支付机构向您提供服务。第三方支付机构可能需要收集您的姓名、银行卡类型及卡号、有效期及手机号码。银行卡号、有效期及手机号码 是个人敏感信息，这些信息是支付功能所必需的信息，拒绝提供将导致您无法使用该功能，但不影响其他功能的正常使用。</li></ol></li></ol><ol type="1" id="3e286c13-04db-4225-9fcc-589999a115f7" class="numbered-list" start="4"><li>为实现产品安全与分析统计的共享：<ol type="a" id="e00a1da7-ed80-4474-9c3f-f4a8c2c25447" class="numbered-list" start="1"><li>保障使用安全：为保障您和其他用户的账号与财产安全，使您和我们的正当合法权益免受不法侵害，我们和关联方或服务提供商可能会共享必要的设备、应用、进程、性能、环境、账号及日志等信息。</li></ol><ol type="a" id="0406c16f-25b9-4e30-88e8-c7b4ffa7e8fb" class="numbered-list" start="2"><li>分析产品使用情况：为分析我们服务的使用情况，提升用户使用的体验，可能会与关联方或第三方共享产品使用情况（崩溃、闪退）的统计性数据，这些数据难以与其他信息结合识别您的个人身份。</li></ol><ol type="a" id="a9a4f09a-c41c-46ca-8db1-6481fa43d647" class="numbered-list" start="3"><li>学术研究与科研：为提升相关领域的科研能力，促进科技发展水平，我们在确保数据安全与目的正当的前提下，可能会与科研院所、高校等机构共享去标识化或匿名化的数据。</li></ol></li></ol><ol type="1" id="bf83873a-3783-42da-b818-11d814b67af1" class="numbered-list" start="5"><li>帮助您参加营销推广活动:当您选择参加我们及我们的关联方或第三方举办的有关营销活动时，可能需要您提供姓名、通信地址、联系方式、银行账号信息。这些信息是个人敏感信息，拒绝提供可能会影响您参加相关活动，但不会影响其他功能。只有经过您的同意，我们才会将这些信息与关联方或第三方共享，以保障您在联合活动中获得体验一致的服务，或委托第三方及时向您兑现奖励</li></ol><ol type="1" id="5e3f3f5f-ff5b-4e56-9541-c5e826b00975" class="numbered-list" start="6"><li>用户主动共享信息：我们产品的多项服务可让您不仅与您的社交网络、也与使用该服务的所有用户公开分享您的相关信息，例如，您在产品中所上传或发布的信息（包括您公开的个人信息、您建立的名单）、您对其他人上传或发布的信息作出的回应，以及包括与这些信息有关的位置数据和日志信息。使用我们服务的其他用户也有可能分享与您有关的信息（包括位置数据和日志信息）。特别是产品的社交媒体服务，是专为使您可以与世界各地的用户共享信息而设计，从而使共享信息可实时、广泛的传递。只要您不删除共享信息，有关信息便可能一直留存在公众领域；即使您删除共享信息，有关信息仍可能由其他用户或不受我们控制的非关联第三方独立地缓存、复制或储存，或由其他用户或该等第三方在公众领域保存。您在我们的服务中所提供、上传或发布的内容和信息（例如有关您社交活动的照片或信息），可能会泄露您的敏感个人信息。您需要谨慎地考虑，是否使用我们的服务披露您的敏感个人信息。</li></ol><p id="44f1268a-1fd5-4d0c-9c9b-df87c6b94d91" class="">因此，请您认真考虑您通过产品的服务上传、发布和交流的信息内容。在一些情况下，您可通过产品某些服务的隐私设定来控制有权浏览您的共享信息的用户范围。如您要求从产品的服务中删除您的个人信息，请通过该等特别服务条款提供的方式操作。</p><h2 id="60c8d98e-49f0-4374-8175-9a295b4597b9" class="">如何转让个人信息</h2><p id="f3b2cf30-59ad-4d64-b3ec-01285a1dab21" class="">我们不会将您的个人信息转让给任何公司、组织和个人，但以下情况除外</p><ol type="1" id="8a97d588-da48-4eda-9d14-1ab1dbc9774b" class="numbered-list" start="1"><li>在获取明确同意的情况下转让：获得您的明确同意后，我们会向其他方转让您的个人信息;</li></ol><ol type="1" id="1b5a9227-66e8-47d9-a07c-667bf391e841" class="numbered-list" start="2"><li>在涉及合并、收购、资产转让或破产清算时，如涉及到个人信息转让，我们会在要求新的持有您个人信息的公司、组织继续受本政策的约束，将按照法律法规及不低于本政策所要求的安全标准继续保护或要求个人信息的继受方继续保护您的个人信息，否则我们将要求该公司、组织重新向您征求授权同意。</li></ol><h2 id="9d33ebbc-d8ad-453d-bda3-c58a944cdd5c" class="">如何披露个人信息</h2><p id="36ff81c7-1d59-4f44-8e9d-b75512d1a116" class="">我们仅会在以下情况下，公开披露您的个人信息并会采用符合行业内标准的安全保护措施：</p><ol type="1" id="937c7e65-2c56-4e0d-93f4-1a49d3620196" class="numbered-list" start="1"><li>获得您明确同意后;</li></ol><ol type="1" id="ee5be336-7a35-4ac0-80b9-a93bdd298100" class="numbered-list" start="2"><li>基于法律的披露：在法律、法律程序、诉讼或政府主管部门强制性要求的情况下，我们可能会公开披露您的个人信息；</li></ol><ol type="1" id="09ff4d38-fe71-4126-80f0-6f3443bf276c" class="numbered-list" start="3"><li>对违规账号、欺诈行为进行处罚公告。</li></ol><h2 id="621cdf90-1b9f-4199-ae52-0edee3378f3c" class="">免征得同意共享、转让、公开披露的个人信息</h2><p id="5d690393-a928-42a7-ad7c-b96f52150292" class="">根据法律法规及国家标准，我们在下列情形中，共享、转让、公开披露您的个人信息无需征得您的授权同意：</p><ol type="1" id="a1e55815-d0cf-4539-acf1-1eb7ebe75e86" class="numbered-list" start="1"><li>与国家安全、国防安全直接相关的；</li></ol><ol type="1" id="2d7c9926-042e-4ef3-a985-e8b34a5227cc" class="numbered-list" start="2"><li>与公共安全、公共卫生、重大公共利益直接相关的；</li></ol><ol type="1" id="29396951-f2a6-46a7-903a-6884581e5e48" class="numbered-list" start="3"><li>与犯罪侦查、起诉、审判和判决执行等直接相关的；</li></ol><ol type="1" id="d7420418-b95a-41cb-aeb2-82c8c5e4e4fc" class="numbered-list" start="4"><li>出于维护您或其他个人的生命、财产等重大合法权益但又很难得到您的同意的；</li></ol><ol type="1" id="af7deef6-3b4f-41f2-a37f-27da56dab2ff" class="numbered-list" start="5"><li>您自行向社会公众公开的个人信息；</li></ol><ol type="1" id="53a3c516-e5c2-4238-9197-3b719f943a4a" class="numbered-list" start="6"><li>从合法公开披露的信息中收集个人信息的，如合法的新闻报道、政府信息公开等渠道。</li></ol><h1 id="5feb489f-75af-46fa-9c50-784c2650facf" class="">四、我们如何保护您的个人信息</h1><ol type="1" id="0130c7d3-6467-416d-a250-cd5b72046db6" class="numbered-list" start="1"><li>我们已使用符合业界标准的安全防护措施保护您提供的个人信息，防止数据遭到未经授权访问、公开披露、使用、修改、损坏或丢失。我们会采取一切合理可行的措施，保护您的个人信息。例如，在您的浏览器与“服务”之间交换数据（如信用卡信息）时受 SSL 加密保护；我们同时对我们网站提供 https 安全浏览方式；我们会使用加密技术确保数据的保密性；我们会使用受信赖的保护机制防止数据遭到恶意攻击；我们会部署访问控制机制，确保只有授权人员才可访问个人信息；以及我们会举办安全和隐私保护培训课程，加强员工对于保护个人信息重要性的认识。</li></ol><ol type="1" id="b71282f4-55ad-48a6-972a-6e0a767fe46e" class="numbered-list" start="2"><li>我们会采取一切合理可行的措施，确保未收集无关的个人信息。我们只会在达成本政策所述目的所需的期限内保留您的个人信息，除非需要延长保留期或受到法律的允许。</li></ol><ol type="1" id="2573938b-aea2-451b-ad95-87d4146324f6" class="numbered-list" start="3"><li>互联网并非绝对安全的环境，而且电子邮件、即时通讯、及与其他我们用户的交流方式并未加密，我们强烈建议您不要通过此类方式发送个人信息。请使用复杂密码，协助我们保证您的账号安全。</li></ol><ol type="1" id="ca233ea4-88dd-4464-856d-2455196b973f" class="numbered-list" start="4"><li>互联网并非绝对安全的环境，而且即时通讯及与其他用户的交流方式并未加密，我们强烈建议您不要通过此类方式发送个人信息。请使用复杂密码，协助我们保证您的账号安全。请您务必妥善保管好您的产品登录名及其他身份要素。您在使用产品时，我们会通过您的登录名及其他身份要素来识别您的身份。一旦您泄漏了前述信息，您可能会蒙受损失，并可能产生对您不利的法律后果。如您发现产品登录名及/或其他身份要素可能或已经泄露时，请您立即和我们取得联系，以便我们及时采取相应措施以避免或降低相关损失。</li></ol><ol type="1" id="212c5ed9-6b0c-419e-83f2-a6734b0ac9fe" class="numbered-list" start="5"><li>在不幸发生个人信息安全事件后，我们将按照法律法规的要求，及时向您告知：安全事件的基本情况和可能的影响、我们已采取或将要采取的处置措施、您可自主防范和降低风险的建议、对您的补救措施等。我们将及时将事件相关情况以邮件、信函、电话、通知等方式告知您，难以逐一告知个人信息主体时，我们会采取合理、有效的方式发布公告。</li></ol><ol type="1" id="ff1b46d3-c4d3-449d-8f6a-3bdbd29f2a73" class="numbered-list" start="6"><li>建立公司信息安全委员会,统一协调管理数据安全工作,并下设数据安全小组、推动各项数据安全活动。</li></ol><ol type="1" id="46379460-0157-4f4d-8070-9ad8c58edf05" class="numbered-list" start="7"><li>公司内部颁布实施数据安全管理规范,明确对用户数据(包括用户个人信息)的保护标准和要求。</li></ol><ol type="1" id="52ae6d6b-acab-4792-91b7-c515197aebba" class="numbered-list" start="8"><li>新项目、新系统上线前对数据安全(包括用户个人信息数据)进行项目风险评估。</li></ol><ol type="1" id="31b6c1c3-3956-489f-9f2f-2630379372fb" class="numbered-list" start="9"><li>与全体员工及服务外包人员签署保密协议,并严格按照工作职责分配数据访问权限。</li></ol><ol type="1" id="25c11735-a35f-46cc-b89f-479d4aeebf83" class="numbered-list" start="10"><li>定期开展面向公司全体员工及外包服务人员的信息安全教育及培训。</li></ol><ol type="1" id="5c06b16a-bbae-4095-86f0-3ec3cba5d0d0" class="numbered-list" start="11"><li>在您使用平台基础功能和不同的业务功能时,为了保护您的账户登录的安全性,防止欺诈风险,有效识别账户异常操作,防范病毒、木马程序或其他恶意程序、网站、避免您的账号被非法分子盗用进而导致您账户中的信息泄露我们将根据您使用不同业务功能的情况收集您的设备信息。</li></ol><p id="3287f2c0-d3d2-40b1-9049-b8c1e798a149" class="">同时，我们还将按照监管部门要求，主动上报个人信息安全事件的处置情况。</p><h1 id="5e1c1883-b261-4ab2-8d32-2b897f2fdf29" class="">五、您的权利</h1><p id="811e6b20-a3ed-44e9-a0ad-74b8f22d0391" class="">按照中国相关的法律、法规、标准，以及其他国家、地区的通行做法，我们保障您对自己的个人信息行使以下权利：</p><h2 id="daa7f23c-5d97-489a-a6ef-4ffda536046a" class="">访问您的个人信息</h2><p id="cd4d91ab-925c-4b4a-bbee-a86078c1a355" class="">您有权访问您的个人信息，法律法规规定的例外情况除外。如果您想行使数据访问权，可以通过以下方式自行访问：点击底部【我的】，通过点击顶部【昵称区域】，查看您的个人信息。</p><p id="a5762659-00e3-4a8c-a8b8-5507b043b90c" class="">如果您无法通过上述链接访问这些个人信息，发送电子邮件至【yuanyin_2023@163.com】。我们将在7天内回复您的访问请求。</p><p id="5bea4783-446a-46fd-b86a-c937d3f4989d" class="">对于您在使用我们的产品或服务过程中产生的其他个人信息，在不违反法律规定的情况下，我们会向您提供。如果您想行使数据访问权，请发送电子邮件至【yuanyin_2023@163.com】。</p><h2 id="20389671-e861-4a31-a208-8b1ebe98dca1" class="">更正您的个人信息</h2><p id="7520e2d9-e172-4be8-8c72-c6239a679579" class="">当您发现我们处理的关于您的个人信息有错误时，您有权要求我们做出更正。您可以通过“点击底部【我的】，通过点击顶部【昵称区域】，查看您的个人信息。”中罗列的方式提出更正申请。</p><p id="e7b6d654-fd83-43dd-b92c-eebb63ad7ad8" class="">如果您无法通过上述链接更正这些个人信息，发送电子邮件至【yuanyin_2023@163.com】。我们将在7天内回复您的更正请求。</p><h2 id="ff6331c8-2c3b-4e5c-9db1-082f2d48e769" class="">删除您的个人信息</h2><p id="92735bc7-35b8-4235-9ff4-8b8ce8e5abc3" class="">在以下情形中，您可以向我们提出删除个人信息的请求：</p><ol type="1" id="21d7ab7f-8b47-4eb7-ae8d-ad2b6611cc4d" class="numbered-list" start="1"><li>如果我们处理个人信息的行为违反法律法规；</li></ol><ol type="1" id="3c230006-1cbf-4caa-93fa-aa346776d3c8" class="numbered-list" start="2"><li>如果我们收集、使用您的个人信息，却未征得您的同意；</li></ol><ol type="1" id="70e4bec7-f780-4b75-bb94-7645072649fa" class="numbered-list" start="3"><li>如果我们处理个人信息的行为违反了与您的约定；</li></ol><ol type="1" id="f18c5815-d2d9-4469-8ba7-155e7ebf5c33" class="numbered-list" start="4"><li>如果您不再使用我们的产品或服务，或您注销了账号；</li></ol><ol type="1" id="997f95db-abe4-4599-8d7b-aca5905957ed" class="numbered-list" start="5"><li>如果我们不再为您提供产品或服务。</li></ol><p id="e80d762f-5039-4b30-8fe4-049a860cd5f3" class="">若我们决定响应您的删除请求，我们还将同时通知从我们获得您的个人信息的实体，要求其及时删除，除非法律法规另有规定，或这些实体获得您的独立授权。</p><p id="5dafb60e-a148-4c66-9b9e-b14d140de034" class="">当您从我们的服务中删除信息后，我们可能不会立即备份系统中删除相应的信息，但会在备份更新时删除这些信息。</p><h2 id="7ced6e0c-2634-4299-8cd9-92fd58310a6e" class="">改变您授权同意的范围</h2><p id="afb11d85-5df9-4869-a769-5b64c9124e34" class="">每个业务功能需要一些基本的个人信息才能得以完成（见本协议“第一部分”）。对于额外收集的个人信息的收集和使用，您可以随时给予或收回您的授权同意。您可以通过以下方式自行操作：</p><p id="bcac300d-684b-494b-b792-239d4a891094" class="">您可以通过删除信息、关闭设备功能、在产品客户端应用程序中通过「设置」，改变您在功能和服务中的授权范围。</p><p id="4a100fb0-465a-4654-b945-056c62f0d88c" class="">特定的业务功能和服务将需要您的个人信息才能得以完成，当您撤回同意后，我们无法继续为您提供撤回同意所对应的功能和服务，也不再处理您相应的个人信息。但您撤回同意的决定，不会影响我们此前基于您的同意而开展的个人信息处理。</p><p id="c728933f-b149-4c89-bc13-40e60ae9ae02" class="">当您撤回同意后，我们将不再处理相应的个人信息。但您撤回同意的决定，不会影响此前基于您的授权而开展的个人信息处理。</p><h2 id="beeaac06-48f9-4b6f-a362-a40edfd5a156" class="">个人信息主体注销账户</h2><p id="b5fc8fcf-4564-4691-9369-a4a29d019e8f" class="">您随时可注销此前注册的账户，您可以通过以下方式自行操作：您可以在“我的-设置-安全中心-注销账号”选择注销账户服务，一旦申请注销账户，即时生效，在注销账户之后，我们将停止为您提供产品或服务，并依据您的要求，删除您的个人信息，法律法规另有规定的除外。</p><h2 id="e6e4cf6e-758f-4858-bab0-680f093e9c27" class="">约束信息系统自动决策</h2><p id="dc54ad32-331d-43a9-ad53-effd425b60f5" class="">在某些业务功能中，我们可能仅依据信息系统、算法等在内的非人工自动决策机制做出决定。如果这些决定显著影响您的合法权益，您有权要求我们做出解释，我们也将提供适当的救济方式。</p><h2 id="aeda0a28-c757-44b3-823c-74ed64f55dcb" class="">响应您的上述请求</h2><p id="9e5d8b5f-9b8c-4619-8ab6-78ec175d7684" class="">为保障安全，您可能需要提供书面请求，或以其他方式证明您的身份。我们可能会先要求您验证自己的身份，然后再处理您的请求。</p><p id="9e70d402-7c6f-45cc-b74f-607a2b3bb311" class="">我们将在7天内做出答复。如您不满意，还可以通过以下途径投诉：</p><p id="b406f848-c5a9-4182-86ce-27934cadb4ef" class="">对于您合理的请求，我们原则上不收取费用，但对多次重复、超出合理限度的请求，我们将视情收取一定成本费用。对于那些无端重复、需要过多技术手段（例如，需要开发新系统或从根本上改变现行惯例）、给他人合法权益带来风险或者非常不切实际（例如，涉及备份磁带上存放的信息）的请求，我们可能会予以拒绝。</p><p id="be8c17d4-04d5-45d0-a379-4262d292aed5" class="">在以下情形中，按照法律法规要求，我们将无法响应您的请求：</p><ol type="1" id="5750f323-43b1-47f9-9ad8-70205557f869" class="numbered-list" start="1"><li>与国家安全、国防安全有关的；</li></ol><ol type="1" id="09b69a79-db86-4f23-9171-b093e3b61e83" class="numbered-list" start="2"><li>与公共安全、公共卫生、重大公共利益有关的；</li></ol><ol type="1" id="b6860d9d-18f5-451b-bf9d-913fd2e8a07b" class="numbered-list" start="3"><li>与犯罪侦查、起诉和审判等有关的；</li></ol><ol type="1" id="0dbee86c-beed-4868-a75b-64de8bfb3ecc" class="numbered-list" start="4"><li>有充分证据表明您存在主观恶意或滥用权利的；</li></ol><ol type="1" id="a65d49ec-4448-4532-8b95-cdde94350da5" class="numbered-list" start="5"><li>响应您的请求将导致您或其他个人、组织的合法权益受到严重损害的；</li></ol><ol type="1" id="ca1d3cb4-ef1b-46d7-9bc6-bcb57de50e71" class="numbered-list" start="6"><li>设计商业秘密的。</li></ol><h1 id="686fce26-6467-48e4-ae12-3c607aacb4f9" class="">六、我们如何处理儿童的个人信息</h1><p id="557680aa-42ca-4d63-a6e5-0c40ab5920e3" class="">我们的产品、网站和服务主要面向成人。如果没有父母或监护人的同意，儿童不得创建自己的用户账户。</p><p id="62864fb8-b998-4d9a-a95b-9da96701eaf6" class="">对于经父母同意而收集儿童个人信息的情况，我们只会在受到法律允许、父母或监护人明确同意或者保护儿童所必要的情况下使用或公开披露此信息。</p><p id="7e148399-ceb1-456f-9527-823d1dab089a" class="">尽管当地法律和习俗对儿童的定义不同，但我们将不满 14 周岁的任何人均视为儿童。</p><p id="46afc323-535a-4da5-a92c-f7fb41a739dc" class="">如果我们发现自己在未事先获得可证实的父母同意的情况下收集了儿童的个人信息，则会设法尽快删除相关数据。</p><h1 id="cf083c02-a227-47fa-9df2-f17e0cd0b8be" class="">七、我们如何存储个人信息</h1><h2 id="d198f3b9-f5c1-40fe-8a31-94716bda27fe" class="">存放地区</h2><p id="01a6e91f-a608-479e-afc2-a5c60078cdcf" class="">原则上，我们在中华人民共和国境内收集和产生的个人信息，将在中华人民共和国境内存储、使用。</p><h2 id="3f3e23bc-ed14-45c3-992c-8be66d9205a4" class="">信息存储、保存期限</h2><ul id="a62fe96c-1872-4a40-aa25-96c7b2b88404" class="bulleted-list"><li style="list-style-type:disc">我们不会将上述信息传输至境外，如果部分产品涉及跨境业务，我们需要向境外机构传输境内收集的相关个人信息的，我们将会遵循国家相关规定，征求您的同意，并按照法律法规和相关监管部门的规定执行，并通过签订协议、现场核查等有效措施，要求境外机构为所获得的您的个人信息保密。</li></ul><ul id="63d22a4c-0adf-4ca1-b4ed-f6b8ed929019" class="bulleted-list"><li style="list-style-type:disc">在您使用本平台服务期间,我们将持续保存您得个人信息。</li></ul><ul id="b435a332-0ada-4302-b723-88e78053b415" class="bulleted-list"><li style="list-style-type:disc">当您自主删除个人信息或注销账户账号,我们将按照法律、法规及监管规定的最短期限保留您的现有个人信息在法律法规要求的最短保存期限内,我们将不再对您的个人信息进行商业化使用。当您的个人信息超出上述保存期限,我们将会对其进行删除或匿名化处理。</li></ul><h1 id="06bb7bd8-77dc-431d-8b4e-89e14a33d1dc" class="">八、本隐私政策如何更新</h1><p id="2bddb5a9-9f18-44e5-9d5f-e158ef29e9c6" class="">我们可能适时会对本隐私权政策进行调整或变更，本隐私权政策的任何更新将以标注更新时间的方式公布在我们应用上，除法律法规或监管规定另有强制性规定外，经调整或变更的内容一经通知或公布后即时生效。如您在隐私权政策调整或变更后继续使用我们提供的任一服务或访问我们相关应用的，我们相信这代表您已充分阅读、理解并接受修改后的隐私权政策并受其约束。</p><h1 id="d6a9149b-24e8-49c9-95b8-e85016ba8ea2" class="">九、如何联系我们</h1><p id="f96a4f97-4418-4ee2-8bc7-c3e46cd15067" class="">我们设立了个人信息保护专职部门（或个人信息保护专员）， 如果您对本隐私政策有任何疑问、意见或建议，通过以下方式与我们联系：</p><p id="969b580e-16ad-4bbe-9210-31f0a435043c" class="">邮箱：yuanyin_2023@163.com</p><p id="baf3c113-d073-4de8-980e-e5f1139d4681" class="">电话：16655180593</p><p id="892f8b78-250a-4aaa-83df-538c586c1ec1" class="">公司地址：广西省南宁市江南区白沙大道57号龙光玖誉城珺城组团12号楼四层405号房</p><p id="d2122c44-eb06-42dc-b8ed-88e7e70263b5" class="">主体地址：南宁缘茵文化传媒有限公司</p><p id="68cdc7ae-47e8-43f4-86a4-59a7249ac931" class="">我们将在1~3个工作日内回复。</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

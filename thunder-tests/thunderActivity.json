@@ -1,0 +1,106 @@
+[
+    {
+        "_id": "79d143f9-712e-4185-b8d2-1b73c814e2a4",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://8.218.246.118:8330/freChat/keepAlive/check",
+        "url": "http://8.218.246.118:8330/freChat/keepAlive/check",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-06-29T06:27:26.155Z",
+        "modified": "2023-06-29T06:27:26.155Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    },
+    {
+        "_id": "12208fec-62d2-4353-b171-f58875a01808",
+        "colId": "history",
+        "containerId": "",
+        "name": "https://8.218.246.118:8330/freChat/keepAlive/check",
+        "url": "https://8.218.246.118:8330/freChat/keepAlive/check",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-06-29T06:28:20.081Z",
+        "modified": "2023-06-29T06:28:20.081Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    },
+    {
+        "_id": "46631973-a4f5-4c52-a3e4-1399d88f24a1",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://www.gscjcplive.com:8330/freChat/keepAlive/check",
+        "url": "http://www.gscjcplive.com:8330/freChat/keepAlive/check",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-06-29T06:30:48.303Z",
+        "modified": "2023-06-29T06:30:48.303Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    },
+    {
+        "_id": "ad010cd6-370e-49fb-8784-28a76837bb33",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://www.gscjcplive.com/freChat/keepAlive/check",
+        "url": "http://www.gscjcplive.com/freChat/keepAlive/check",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-06-29T08:23:54.220Z",
+        "modified": "2023-06-29T08:23:54.220Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    },
+    {
+        "_id": "a84a925d-9d23-4c19-bae9-c8229bbd7608",
+        "colId": "history",
+        "containerId": "",
+        "name": "https://www.gscjcplive.com/freChat/keepAlive/check",
+        "url": "https://www.gscjcplive.com/freChat/keepAlive/check",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-06-29T08:24:11.474Z",
+        "modified": "2023-06-29T08:24:11.474Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    },
+    {
+        "_id": "44d6ba8a-d2c2-4331-aa7c-fffd085f9651",
+        "colId": "history",
+        "containerId": "",
+        "name": "{endPoint}/freChat/keepAlive/check",
+        "url": "{endPoint}/freChat/keepAlive/check",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-06-30T06:20:57.676Z",
+        "modified": "2023-06-30T06:20:57.676Z",
+        "headers": [],
+        "params": [
+            {
+                "name": "endPoint",
+                "value": "",
+                "isPath": true
+            }
+        ],
+        "tests": []
+    },
+    {
+        "_id": "de30f2d2-e357-47e0-8b9b-ff3c07fb9a74",
+        "colId": "history",
+        "containerId": "",
+        "name": "{{endPoint}}/freChat/member/register",
+        "url": "{{endPoint}}/freChat/member/register",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2023-06-30T06:36:17.854Z",
+        "modified": "2023-06-30T06:36:17.854Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    }
+]
